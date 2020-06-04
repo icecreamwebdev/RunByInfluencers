@@ -1,0 +1,460 @@
+*{
+    
+	font-family:'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+	font-weight:600;
+	font-size:14px;
+	outline:0 none;
+	border:0 none;
+	margin:0px;
+	padding:0px;
+    text-decoration:none;
+    
+}
+
+
+
+
+#homeWrap{
+    
+    width:100%;
+    height:97%;
+    background-image:url(miscImages/background8.jpg);
+    background-size:100% auto;
+  background-size: auto;
+    background-size: cover;
+
+    
+}
+
+#homeWrapOverlay{
+width:100%;
+    height:100%;
+    position:relative;
+    background-color:rgba(4,13,33,0.05)
+
+}
+header{
+    
+    position:relative;
+    width:100%;
+    height:23%;
+
+}
+
+#headerInner{
+    width:100%;
+    height:100%;
+    
+}
+
+#homeWrap #logo{
+
+    float:left;
+    width:255px;
+    height:auto;
+    position: absolute;
+    top: 50%;
+    margin-left:3.5%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#homeWrap #menu{
+position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+    float:right;
+    margin-right:5%;
+    right:0px;
+    
+}
+
+#homeWrap #menu h2{
+
+    font-size: 14px;
+    color:white;
+    opacity:0.7;
+    font-style:italic;
+}
+
+#homeWrap #logo img{
+    
+   max-width:100%;
+    height:auto;
+
+}
+
+#homeMain{
+    
+    width:60%;
+    height:50%;
+    margin-left:20%;
+    margin-top:3%;
+    
+}
+
+#homeMain h1{
+
+    font-size:30px;
+    text-align:center;
+    padding-top:40px;
+    color:white;
+
+}
+#homeMain h1 span{
+        line-height:45px;
+        font-size:34px;
+}
+
+
+#homeMain h1 #forInfluencers{
+    border-right:2px solid white;
+    border-left:2px solid white;
+    color:white;
+    border-top:0px;
+    padding:2px;
+    margin-top:2px;
+    font-size:34px;
+    font-style:italic;
+
+}
+
+#homeMain #emailForm{
+    text-align: center;
+    margin-top:60px;
+    width:100%;
+    
+}
+
+#homeMain #emailForm #emailFormText{
+    text-align:center;
+    width:100%;
+
+}
+
+#homeMain #emailForm h3{
+    
+
+    color:#aeeb86;
+    font-size: 12px;
+    margin-bottom:2px;
+
+
+}
+
+#homeMain #emailForm h3 span{
+    opacity:1;
+        color:white;
+    font-size: 12px;
+    margin-bottom:2px;
+}
+
+#homeMain #emailForm input{
+
+
+display: inline-block;
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.06);
+    margin-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    margin-left:auto;
+    margin-left:0px;
+    outline:none;
+    border:1px solid white;
+}
+
+#homeMain #emailForm input:focus{
+    
+    outline:none;
+    
+
+}
+
+
+#homeMain #emailForm ::placeholder{
+    
+    color:white;
+    opacity:1;
+    cursor: text;
+
+}
+
+
+#welcomeSubmitButton {
+    height: 40px;
+    margin-top: 0px;
+    margin-right: 4px;
+    width: 40px;
+    background: url(miscImages/welcomeSubmit.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 0px;
+    top: -40px;
+    opacity: 0.6;
+    cursor: pointer;
+    position:absolute;
+    top:384px;
+    left:275px;
+    margin-left:433px;
+}
+
+#downArrow{
+    text-align:center;
+    margin-top:60px;
+    position:relative;
+    animation: arrow 1.5s linear infinite;
+}
+
+#downArrow span{
+    
+    opacity:0.85;
+    color:white;
+
+
+}
+
+@keyframes arrow {
+  0%   {top:0px;}
+  50%  { top:12px;}
+  100% {top:0px;}
+}
+
+#downArrow span:hover{
+    
+    opacity:1;
+    cursor:pointer;
+
+}
+
+#infoWrap{
+    width:100%;
+    height:400px;
+    background-color:#1b2034 ;
+    position:absolute;
+}
+
+#infoWrapInner{
+    position:relative;
+    width:95%;
+    left:2.5%;
+}
+
+#infoWrap h2{
+    text-align:left;
+    padding-left:40px;
+    margin-top:40px;
+    font-size:22px;
+    font-weight: 700;
+    color:white;
+    margin-bottom:30px;
+}
+
+#infoWrap h2 span{
+    color:#aeeb86;
+    font-size:22px;
+    font-weight: 700;
+}
+
+#infoWrap #brandsWrap{
+    
+    width:100%;
+    height:auto;
+    margin-top:40px;
+
+}
+
+#infoWrap #brandsWrap ul{
+
+    list-style: none;
+}
+
+#infoWrap #brandsWrap ul li{
+    display:inline;
+    font-size:20px;
+    font-weight:800;
+    color:#2a314f;
+    width:20%;
+    height:160px;
+    float:left;
+    display:block;
+    text-align:center;
+}
+
+#infoWrap #brandsWrap ul li img{
+    height:51%;
+    width:auto;
+    opacity:0.75;
+}
+
+#infoWrap #brandsWrap ul li img:hover{
+
+    opacity:1;
+}
+
+#infoWrap #brandsWrap ul li p{
+    text-align:center;
+    font-size:20px;
+    font-weight:800;
+}
+
+#infoWrap #brandsWrap ul li #audible{
+    height:30%;
+    width:auto;
+}
+
+#infoWrap #brandsWrap ul li #dollarShave{
+    height:52%;
+    width:auto;
+    margin-top:-4px;
+    opacity:0.75;
+}
+
+#infoWrap #brandsWrap ul li #dollarShave:hover{
+
+    opacity:1;
+}
+
+#infoWrap #selctionroller{
+    width:10%;
+    height:auto;
+    margin-left:45%;
+    
+}
+#infoWrap #selctionroller ul{
+    
+    list-style: none;
+    text-align:center;
+}
+
+#infoWrap #selctionroller ul li{
+    
+        display:inline;
+    font-size:40px;
+    font-weight:800;
+    color:#2a314f;
+    float:left;
+    display:block;
+    text-align:center;
+    padding:4px;
+}
+
+#infoWrap #selctionroller ul li a{
+    
+    color:white;
+    
+}
+
+#infoWrap #selctionroller ul #circleOn a{
+    color:#aeeb86;
+    border:1px solid #aeeb86;
+    padding:2px;
+    padding-left:3px;
+    border-radius:25px;
+}
+
+/* for smaller devices */
+
+/* for smartphones and portrait tablet */
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+@media (max-width: 740px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    
+    #homeWrap{
+    
+    width:100%;
+    height:100%;
+    background-image:url(miscImages/movileBackground.jpg);
+    -webkit-background-size: 100%; 
+-moz-background-size: 100%; 
+-o-background-size: 100%; 
+background-size: 100%; 
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+
+    
+}
+    
+    #downArrow{
+  margin-top: 40px;
+        
+    }
+    
+    #homeMain h1{
+        font-size:24px;
+    }
+    
+    #homeMain{
+        width:80%;
+    margin-left:10%;
+    margin-top:4%;
+    }
+    
+    #homeMain h1 #forInfluencers{
+    font-size:28px;
+
+}
+    
+    #homeMain #emailForm input{
+        width:80%;
+    }
+    
+    #homeMain #emailForm{
+        margin-top:50px;
+    }
+    
+    #infoWrap #brandsWrap ul li img{
+    
+        height:35%;
+        width:auto;
+    
+    }
+    
+    #infoWrap #brandsWrap ul li #audible{
+    height:14%;
+    width:auto;
+}
+
+#infoWrap #brandsWrap ul li #dollarShave{
+    height:36%;
+    width:auto;
+    margin-top:-4px;
+    opacity:0.75;
+}
+    
+    #infoWrap #selctionroller{
+    
+        display:none;a
+    }
+    
+
+    
+    header{
+        padding-top:20px;
+    }
+    
+    #homeWrap #logo{
+
+    float:left;
+    width:150px;
+    height:auto;
+    position: absolute;
+    top: 50%;
+    margin-left:3.5%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+}
