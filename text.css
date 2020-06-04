@@ -14,14 +14,13 @@
 
 
 
-
 #homeWrap{
     
     width:100%;
     height:97%;
-    background-image:url(miscImages/background8.jpg);
+    background-image:url(miscImages/newBackground.jpg);
     background-size:100% auto;
-  background-size: auto;
+    background-size: auto;
     background-size: cover;
 
     
@@ -31,7 +30,7 @@
 width:100%;
     height:100%;
     position:relative;
-    background-color:rgba(4,13,33,0.05)
+    background-color:rgba(26,54,105,0.15);
 
 }
 header{
@@ -91,16 +90,19 @@ position: absolute;
     width:60%;
     height:50%;
     margin-left:20%;
-    margin-top:3%;
+    margin-top:2%;
     
 }
 
 #homeMain h1{
 
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size:30px;
     text-align:center;
-    padding-top:40px;
-    color:white;
+    padding-top:5px;
+    color:#1b2034;
 
 }
 #homeMain h1 span{
@@ -110,14 +112,13 @@ position: absolute;
 
 
 #homeMain h1 #forInfluencers{
-    border-right:2px solid white;
-    border-left:2px solid white;
+    background-color:#1b2034;
     color:white;
-    border-top:0px;
     padding:2px;
+    padding-right:8px;
+    padding-left:8px;
     margin-top:2px;
     font-size:34px;
-    font-style:italic;
 
 }
 
@@ -137,7 +138,7 @@ position: absolute;
 #homeMain #emailForm h3{
     
 
-    color:#aeeb86;
+    color:#1b2034;
     font-size: 12px;
     margin-bottom:2px;
 
@@ -158,7 +159,7 @@ display: inline-block;
     width: 320px;
     height: 40px;
     border-radius: 5px;
-    background-color: rgba(255,255,255,0.06);
+    background-color: rgba(255,255,255,0.1);
     margin-top: 8px;
     padding-left: 15px;
     padding-right: 15px;
@@ -257,7 +258,7 @@ display: inline-block;
 }
 
 #infoWrap h2 span{
-    color:#aeeb86;
+    color:#fd69b7 ;
     font-size:22px;
     font-weight: 700;
 }
@@ -316,6 +317,11 @@ display: inline-block;
     opacity:0.75;
 }
 
+#infoWrap #brandsWrap ul .hide{
+    display:none;
+
+}
+
 #infoWrap #brandsWrap ul li #dollarShave:hover{
 
     opacity:1;
@@ -352,8 +358,8 @@ display: inline-block;
 }
 
 #infoWrap #selctionroller ul #circleOn a{
-    color:#aeeb86;
-    border:1px solid #aeeb86;
+    color:#fd69b7;
+    border:1px solid #fd69b7;
     padding:2px;
     padding-left:3px;
     border-radius:25px;
@@ -371,11 +377,11 @@ display: inline-block;
 @media (max-width: 740px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
     
-    #homeWrap{
+#homeWrap{
     
     width:100%;
     height:100%;
-    background-image:url(miscImages/movileBackground.jpg);
+    background-image:url(miscImages/mobileBackground.jpg);
     -webkit-background-size: 100%; 
 -moz-background-size: 100%; 
 -o-background-size: 100%; 
@@ -416,6 +422,23 @@ background-size: cover;
         margin-top:50px;
     }
     
+    #infoWrap{
+        width:100%;
+        height:500px;
+    
+    }
+    
+    #infoWrap #brandsWrap ul li{
+    
+        width:33.33333%;
+    }
+    
+    #infoWrap #brandsWrap ul .hide{
+    
+        display:block;
+    }
+    
+    
     #infoWrap #brandsWrap ul li img{
     
         height:35%;
@@ -440,12 +463,22 @@ background-size: cover;
         display:none;a
     }
     
+    #homeMain #emailForm input{
+        background-color: rgba(255,255,255,0.22);
+    }
 
     
     header{
         padding-top:20px;
     }
     
+    #homeWrapOverlay{
+        width:100%;
+        height:100%;
+        position:relative;
+        background-color:rgba(26,54,105,0.3);
+
+}
     #homeWrap #logo{
 
     float:left;
