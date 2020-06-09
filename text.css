@@ -154,7 +154,7 @@ font-style: normal;
 #homeMain #emailForm h3{
     
 
-    color:#1b2034;
+    color:#022054;
     font-size: 12px;
     margin-bottom:0px;
 
@@ -164,6 +164,8 @@ font-style: normal;
 #homeMain #emailForm h3 span{
     opacity:1;
         color:white;
+    padding-right:2px;
+    border-bottom:1px solid white;
     font-size: 12px;
     margin-bottom:2px;
 }
