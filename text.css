@@ -134,6 +134,34 @@ position: absolute;
 
 }
 
+#homeMain #socialBar{
+    
+    opacity:0.9;
+    font-size:4px;
+    color:white;
+    position:absolute;
+    height:150px;
+    width:32px;
+    top:30%;
+    right:15px;
+    border:2px solid white;
+    border-radius:20px;
+
+}
+
+#homeMain #socialBar ul{
+
+    list-style: none;
+}
+
+#homeMain #socialBar ul li{
+
+    margin-top:11px;
+    margin-left:7px;
+    font-size:14px;
+    oapcity:0.7;
+}
+
 #homeMain #emailForm{
     text-align: center;
     margin-top:60px;
