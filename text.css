@@ -150,7 +150,8 @@ position: absolute;
 }
 
 #homeMain #socialBar:hover{
-    oapcity:1;
+    opacity:1;
+    border:2px solid #ff91cb;
 }
 
 #homeMain #socialBar a{
