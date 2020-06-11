@@ -21,21 +21,23 @@
     
     <body>
         
-        <div id="homeWrap">
+       <div id="homeWrap">
+            <video autoplay muted loop id="myVideo">
+  <source src="backgroundvid.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
             <div id="homeWrapOverlay">
             
             <header>
                 <div id="headerInner">
-                <div id="logo"><img src="logo/png/NewLaurenLogo.png" /></div>
-                <div id="menu"><h2><!--<i class="fas fa-clock"></i>
-
-<span style="opacity:0.9;">Full Website Coming Soon</h2></div>-->
+                <div id="logo"><!-- <img src="logo/png/rbi-logo-wide-dark-bg-mono.png" />--><img src="logo/png/FinalFinal.png" /></div>
+                <!--<div id="menu"><h2>Full website coming soon</h2></div>-->
                 </div>
             </header>
                 <div id="homeMain">
-                    <h1>For influencers,<br /><span id="forInfluencers">by influencers.</span></h1>
+                    <!--<h1>For influencers<br /><span id="forInfluencers">by influencers</span></h1>-->
                     
-                    <div id="emailForm"><h3>Be the first to<span> know</span></h3><input name="email" type="text" placeholder="Email" autocomplete="off" autofocus="off"><!-- <button type="submit" id="welcomeSubmitButton"></button>--></div>
+                   <!-- <div id="emailForm"><h3><span>Enter your email to stay notified on</span> Run by influencers.</h3><input name="email" type="text" placeholder="Email" autocomplete="off" autofocus="off"><button type="submit" id="welcomeSubmitButton"></button</div>-->
                     <div id="downArrow" ><span onclick="scrollWin()"><i class="far fa-arrow-alt-circle-down fa-2x"></i></span>
 
 </div>
@@ -56,7 +58,6 @@
                     <li><br /><img src="miscImages/audible1.png" id="audible"></li>
                     <li><img src="miscImages/surfshark1.png"></li>
                     <li><img src="miscImages/raycon1.png"</li>
-                    <li class="hide"><img src="miscImages/dollarshave1.png" id="dollarShave"></li>
                 </ul>
             </div>
                 <div id="selctionroller">
@@ -75,6 +76,14 @@
                 function scrollWin(){
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
             }
+            
+            
+            function changeReycon1() {
+document.getElementById("reycon").src = "miscImages/raycon1.png";
+   }
+  function changeReycon2(){
+   document.getElementById("reycon").src = "miscImages/raycon2.png";
+   }
 
             
         </script>

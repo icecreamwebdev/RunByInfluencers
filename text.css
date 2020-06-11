@@ -14,23 +14,33 @@
 
 
 
+
 #homeWrap{
     
     width:100%;
-    height:97%;
-    background-image:url(miscImages/newBackground.jpg);
+    height:87%;
+    background-image:url(miscImages/background8.jpg);
     background-size:100% auto;
-    background-size: auto;
-    background-size: cover;
 
     
+}
+
+#homeWrap #myVideo{
+    
+     position: fixed;
+  left: 0;
+  top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size:cover;
+
 }
 
 #homeWrapOverlay{
 width:100%;
     height:100%;
     position:relative;
-    background-color:rgba(242, 90, 250,0.15);
+    background-color:rgba(4,13,33,0.02)
 
 }
 header{
@@ -50,11 +60,11 @@ header{
 #homeWrap #logo{
 
     float:left;
-    width:255px;
+    width:355px;
     height:auto;
     position: absolute;
     top: 50%;
-    margin-left:3.5%;
+    margin-left:1%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -71,23 +81,10 @@ position: absolute;
 }
 
 #homeWrap #menu h2{
-        font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-font-style: normal;
+
     font-size: 14px;
     color:white;
-    opacity:1;
-}
-
-#homeWrap #menu h2 span{
-        font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-#homeWrap #menu h2{
-    opacity 1;
+    opacity:0.9;
 }
 
 #homeWrap #logo img{
@@ -102,25 +99,25 @@ font-style: normal;
     width:60%;
     height:50%;
     margin-left:20%;
-    margin-top:2%;
+    margin-top:7%;
     
 }
 
 #homeMain h1{
 
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
-    font-size:27px;
+    font-size:32px;
     text-align:center;
     padding-top:5px;
-    color:white;
+    color:#022054;
 
 }
 #homeMain h1 span{
-        line-height:42px;
-        font-size:34px;
+        line-height:32px;
+        font-size:27px;
 }
 
 
@@ -134,7 +131,6 @@ font-style: normal;
     padding-right:10px;
     padding-left:10px;
     font-size:32px;
-    background-color:#022054;
 
 }
 
@@ -154,9 +150,9 @@ font-style: normal;
 #homeMain #emailForm h3{
     
 
-    color:#022054;
+    color:#aeeb86;
     font-size: 12px;
-    margin-bottom:0px;
+    margin-bottom:2px;
 
 
 }
@@ -164,8 +160,6 @@ font-style: normal;
 #homeMain #emailForm h3 span{
     opacity:1;
         color:white;
-    padding-right:2px;
-    border-bottom:1px solid white;
     font-size: 12px;
     margin-bottom:2px;
 }
@@ -177,7 +171,7 @@ display: inline-block;
     width: 320px;
     height: 40px;
     border-radius: 5px;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.06);
     margin-top: 8px;
     padding-left: 15px;
     padding-right: 15px;
@@ -219,14 +213,14 @@ display: inline-block;
     opacity: 0.6;
     cursor: pointer;
     position:absolute;
-    top:384px;
+    bottom:384px;
     left:275px;
     margin-left:433px;
 }
 
 #downArrow{
     text-align:center;
-    margin-top:60px;
+    margin-top:420px;
     position:relative;
     animation: arrow 1.5s linear infinite;
 }
@@ -241,7 +235,7 @@ display: inline-block;
 
 @keyframes arrow {
   0%   {top:0px;}
-  50%  { top:12px;}
+  50%  { top:20px;}
   100% {top:0px;}
 }
 
@@ -261,13 +255,13 @@ display: inline-block;
 
 #infoWrapInner{
     position:relative;
-    width:95%;
-    left:2.5%;
+    width:100%;
+    left:0%;
 }
 
 #infoWrap h2{
     text-align:left;
-    padding-left:40px;
+    padding-left:30px;
     margin-top:40px;
     font-size:22px;
     font-weight: 700;
@@ -312,10 +306,6 @@ display: inline-block;
     opacity:1;
 }
 
-#infoWrap #brandsWrap ul li img:hover{
-
-    opacity:0.75;
-}
 
 #infoWrap #brandsWrap ul li p{
     text-align:center;
@@ -383,6 +373,7 @@ display: inline-block;
     border-radius:25px;
 }
 
+
 /* for smaller devices */
 
 /* for smartphones and portrait tablet */
@@ -395,11 +386,11 @@ display: inline-block;
 @media (max-width: 740px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
     
-#homeWrap{
+    #homeWrap{
     
     width:100%;
     height:100%;
-    background-image:url(miscImages/mobileBackground.jpg);
+    background-image:url(miscImages/movileBackground.jpg);
     -webkit-background-size: 100%; 
 -moz-background-size: 100%; 
 -o-background-size: 100%; 
@@ -440,23 +431,6 @@ background-size: cover;
         margin-top:50px;
     }
     
-    #infoWrap{
-        width:100%;
-        height:500px;
-    
-    }
-    
-    #infoWrap #brandsWrap ul li{
-    
-        width:33.33333%;
-    }
-    
-    #infoWrap #brandsWrap ul .hide{
-    
-        display:block;
-    }
-    
-    
     #infoWrap #brandsWrap ul li img{
     
         height:35%;
@@ -481,22 +455,12 @@ background-size: cover;
         display:none;a
     }
     
-    #homeMain #emailForm input{
-        background-color: rgba(255,255,255,0.22);
-    }
 
     
     header{
         padding-top:20px;
     }
     
-    #homeWrapOverlay{
-        width:100%;
-        height:100%;
-        position:relative;
-        background-color:rgba(26,54,105,0.3);
-
-}
     #homeWrap #logo{
 
     float:left;
