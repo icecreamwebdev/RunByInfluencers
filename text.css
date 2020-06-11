@@ -248,7 +248,7 @@ display: inline-block;
 
 #infoWrap{
     width:100%;
-    height:400px;
+    height:350px;
     background-color:#1b2034 ;
     position:absolute;
 }
@@ -333,44 +333,6 @@ display: inline-block;
 #infoWrap #brandsWrap ul li #dollarShave:hover{
 
     opacity:1;
-}
-
-#infoWrap #selctionroller{
-    width:10%;
-    height:auto;
-    margin-left:45%;
-    
-}
-#infoWrap #selctionroller ul{
-    
-    list-style: none;
-    text-align:center;
-}
-
-#infoWrap #selctionroller ul li{
-    
-        display:inline;
-    font-size:40px;
-    font-weight:800;
-    color:#2a314f;
-    float:left;
-    display:block;
-    text-align:center;
-    padding:4px;
-}
-
-#infoWrap #selctionroller ul li a{
-    
-    color:white;
-    
-}
-
-#infoWrap #selctionroller ul #circleOn a{
-    color:#fd69b7;
-    border:1px solid #fd69b7;
-    padding:2px;
-    padding-left:3px;
-    border-radius:25px;
 }
 
 
