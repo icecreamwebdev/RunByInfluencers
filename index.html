@@ -62,10 +62,10 @@
             <br />
             <div id="brandsWrap">
                 <ul>
-                    <li><img src="miscImages/dollarshave1.png" id="dollarShave"></li>
-                    <li><img src="miscImages/expressvpn1.png"></li>
-                    <li><br /><img src="miscImages/audible1.png" id="audible"></li>
-                    <li><img src="miscImages/surfshark1.png"></li>
+                    <li><img src="miscImages/dollarshave1.png" id="dollarShave"  onmouseover = "changeDollarshave2()" onmouseout= "changeDollarshave1()"></li>
+                    <li><img src="miscImages/expressvpn1.png" id="expressVpn" onmouseover = "changeExpressvpn2()" onmouseout= "changeExpressvpn1()"></li>
+                    <li><br /><img src="miscImages/audible1.png" id="audible" onmouseover = "changeAudible2()" onmouseout= "changeAudible1()"></li>
+                    <li><img src="miscImages/surfshark1.png" id="surfshark" onmouseover = "changeSurfshark2()" onmouseout= "changeSurfshark1()" ></li>
                     <li><img src="miscImages/raycon1.png" id="reycon" onmouseover = "changeReycon2()" onmouseout= "changeReycon1()"></li>
                 </ul>
             </div>
@@ -86,14 +86,40 @@
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
             }
             
-            
+            //change reycon
             function changeReycon1() {
 document.getElementById("reycon").src = "miscImages/raycon1.png";
    }
   function changeReycon2(){
    document.getElementById("reycon").src = "miscImages/raycon2.png";
    }
-
+            // change dollarshave
+            function changeDollarshave1() {
+document.getElementById("dollarShave").src = "miscImages/dollarshave1.png";
+   }
+  function changeDollarshave2(){
+   document.getElementById("dollarShave").src = "miscImages/dollarshave2.png";
+   }
+            // change expressVpn
+            function changeExpressvpn1() {
+document.getElementById("expressVpn").src = "miscImages/expressvpn1.png";
+   }
+  function changeExpressvpn2(){
+   document.getElementById("expressVpn").src = "miscImages/expressvpn2.png";
+   }
+            function changeAudible1() {
+document.getElementById("audible").src = "miscImages/audible1.png";
+   }
+  function changeAudible2(){
+   document.getElementById("audible").src = "miscImages/audible2.png";
+   }
+            
+            function changeSurfshark1() {
+document.getElementById("surfshark").src = "miscImages/surfshark1.png";
+   }
+  function changeSurfshark2(){
+   document.getElementById("surfshark").src = "miscImages/surfshark2.png";
+   }
             
         </script>
     </body>
