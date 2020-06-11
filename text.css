@@ -153,6 +153,10 @@ position: absolute;
     oapcity:1;
 }
 
+#homeMain #socialBar a{
+    color:white;
+}
+
 #homeMain #socialBar ul{
 
     list-style: none;
