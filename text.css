@@ -508,6 +508,7 @@ background-size: cover;
     
     #infoWrap #brandsWrap{
         height:100px;
+        margin-bottom:15px;
     }
     
     #infoWrap #brandsWrap ul li.aboveThree{
