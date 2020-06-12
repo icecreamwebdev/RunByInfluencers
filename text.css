@@ -395,12 +395,11 @@ display: inline-block;
 #infoWrap #selctionroller{
     width:100%;
     height:auto;
-    margin-left:45%;
     margin-top:56px;
     
 }
 #infoWrap #selctionroller ul{
-    
+    margin-left:45%;
     list-style: none;
     text-align:center;
 }
