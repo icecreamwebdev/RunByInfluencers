@@ -585,4 +585,27 @@ background-size: cover;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+    
+    
+    #infoWrap #brandsWrap ul li img{
+    width:47%;
+    height:auto;
+    opacity:1;
+}
+
+
+
+#infoWrap #brandsWrap ul li #audible{
+    width:53%;
+    height:auto;
+    margin-top:10%;
+}
+
+#infoWrap #brandsWrap ul li #dollarShave{
+        width:51%;
+    height:auto;
+    margin-top:-2px;
+    opacity:1;
+}
+
 }
