@@ -550,7 +550,9 @@ background-size: cover;
         margin-top:12%;
     }
     
-    
+    #homeMain #socialBar{
+        height:151px;
+    }
 
    
     #infoWrap h2{
