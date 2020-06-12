@@ -394,12 +394,18 @@ display: inline-block;
 
 #infoWrap #selctionroller{
     width:100%;
-    height:auto;
+    height:30px;
+    
     margin-top:56px;
     
 }
 #infoWrap #selctionroller ul{
-    margin-left:45%;
+    width:70px;
+    height:22px;
+    position:absolute;
+    left:50%;
+    margin-left:-35px;
+    position:absolute;
     list-style: none;
     text-align:center;
 }
