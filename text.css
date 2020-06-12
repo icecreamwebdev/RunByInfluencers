@@ -535,7 +535,10 @@ background-size: cover;
         display:block;
     }
     
+    #infoWrap #brandsWrap ul li #audible{
     
+        margin-top:0px;
+    }
     
     
 
@@ -558,7 +561,7 @@ background-size: cover;
     #homeWrap #logo{
 
     float:left;
-    width:350px;
+    width:65%;
     height:auto;
     position: absolute;
     top: 50%;
