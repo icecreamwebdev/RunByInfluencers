@@ -577,6 +577,10 @@ background-size: cover;
   transform: translateY(-50%);
 }
     
+    #homeMain #socialBar{
+        height:155px;
+    }
+    
     
 
 
