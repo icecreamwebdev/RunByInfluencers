@@ -11,6 +11,99 @@
         <link rel="stylesheet" type="text/css" href="text.css" />
         
 
+        <link rel="stylesheet" type="text/css" href="glider.css" />
+    <script src="glider.js"></script>
+    <script>
+      window.addEventListener('load',function(){
+        document.querySelector('.glider').addEventListener('glider-slide-visible', function(event){
+            var glider = Glider(this);
+            console.log('Slide Visible %s', event.detail.slide)
+        });
+        document.querySelector('.glider').addEventListener('glider-slide-hidden', function(event){
+            console.log('Slide Hidden %s', event.detail.slide)
+        });
+        document.querySelector('.glider').addEventListener('glider-refresh', function(event){
+            console.log('Refresh')
+        });
+        document.querySelector('.glider').addEventListener('glider-loaded', function(event){
+            console.log('Loaded')
+        });
+
+        window._ = new Glider(document.querySelector('.glider'), {
+            slidesToShow: 5, //'auto',
+            slidesToScroll: 'auto',
+            itemWidth: 3000,
+            draggable: true,
+            scrollLock: false,
+            dots: '#dots',
+            rewind: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1500,
+                    settings: {
+                        slidesToScroll: 'auto',
+                        itemWidth: 305,
+                        slidesToShow: 'auto',
+                        exactWidth: true
+                    }
+                },
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToScroll: 5,
+                        slidesToShow: 5,
+                        itemWidth: 290,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToScroll: 5,
+                        slidesToShow: 5,
+                        itemWidth: 290,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToScroll: 4,
+                        slidesToShow: 4,
+                        itemWidth: 280,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToScroll: 4,
+                        slidesToShow: 4,
+                        itemWidth: 200,
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToScroll: 3,
+                        slidesToShow: 3,
+                        itemWidth: 200,
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToScroll: 3,
+                        slidesToShow: 3,
+                        itemWidth: 170,
+                    }
+                }
+            ]
+        });
+      });
+    </script>
+
 
         
 
@@ -63,21 +156,22 @@
                 <h2>Brands our <span>influencers</span> have worked with . .</h2>
             <br />
             <div id="brandsWrap">
-                <ul>
-                    <li><img src="miscImages/dollarshave1.png" id="dollarShave"  onmouseover = "changeDollarshave2()" onmouseout= "changeDollarshave1()"></li>
-                    <li><img src="miscImages/expressvpn1.png" id="expressVpn" onmouseover = "changeExpressvpn2()" onmouseout= "changeExpressvpn1()"></li>
-                    <li><img src="miscImages/audible1.png" id="audible" onmouseover = "changeAudible2()" onmouseout= "changeAudible1()"></li>
-                    <li class="aboveThree"><img src="miscImages/surfshark1.png" id="surfshark" onmouseover = "changeSurfshark2()" onmouseout= "changeSurfshark1()" ></li>
-                    <li class ="aboveThree"><img src="miscImages/raycon1.png" id="reycon" onmouseover = "changeReycon2()" onmouseout= "changeReycon1()"></li>
-                </ul>
+                <div class="glider-contain">
+        <div class="glider">
+            <div><img  id="audible" src="miscImages/audible1.png"></div>
+            <div><img  src="miscImages/dollarshave1.png"></div>
+            <div><img  src="miscImages/raycon1.png"></div>
+            <div><img  src="miscImages/surfshark1.png"></div>
+            <div><img  src="miscImages/expressvpn1.png"></div> 
+<div><img  id ="audible" src="miscImages/audible1.png"></div>
+            <div><img  src="miscImages/dollarshave1.png"></div>
+            <div><img  src="miscImages/raycon1.png"></div>
+            <div><img  src="miscImages/surfshark1.png"></div>
+            <div><img  src="miscImages/expressvpn1.png"></div>
+        </div>
+        <div id="dots"></div>
+    </div>
             </div>
-                <div id="selctionroller">
-                <ul>
-                    <li class="circleOn"><i class="fa fa-circle"></i></li>
-                    <li id ="music"><i class="fa fa-circle"></i></li>
-                    <li id="history"><i class="fa fa-circle"></i></li>
-                </ul>
-                </div>
             </div>
         </div>
         
