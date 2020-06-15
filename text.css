@@ -362,7 +362,11 @@ display: inline-block;
         .glider div{
             width:20%;
             height:200px;
+        }
+
+        .glider div:hover > img{
         
+            opacity:0.6;
         }
         
         .glider div img{
@@ -476,11 +480,7 @@ background-size: cover;
     
 }
     
-.glider{
-            
-                margin-left:5%;
-}
-    
+
     .glider div img{
             height:65px;
             width:auto;
