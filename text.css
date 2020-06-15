@@ -445,7 +445,7 @@ display: inline-block;
 
 #infoWrap #selctionroller ul #circleOn a{
 
-        color:#fd69b7;
+    color:#fd69b7;
     border-style: none;
     border:none;
     padding:none;
@@ -489,7 +489,7 @@ background-size: cover;
             height:200px;
             width:96%;
             margin-left:2%;
-    
+    }
 
     .glider div img{
             height:65px;
