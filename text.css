@@ -355,8 +355,8 @@ display: inline-block;
         
         .glider{
             height:200px;
-            width:94%;
-            margin-left:3%;
+            width:98%;
+            margin-left:1%;
         }
         
         .glider div{
@@ -489,6 +489,11 @@ background-size: cover;
             margin:0 auto;
             margin-top:50px;
         
+        }
+    
+        .glider div img:hover{
+        
+            opacity:0.5;
         }
     
     .glider div #audible{
