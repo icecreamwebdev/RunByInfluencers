@@ -582,7 +582,7 @@ background-size: cover;
 }
     
     #homeMain #socialBar{
-        height:151.5px;
+        height:152px;
     }
     
     
@@ -596,4 +596,11 @@ background-size: cover;
         
     }
     
+
+}
+
+@media (max-width: 400px){
+#homeMain #socialBar{
+        height:144.5px;
+    }
 }
