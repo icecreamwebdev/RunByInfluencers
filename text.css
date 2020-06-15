@@ -51,7 +51,6 @@ width:100%;
 
 }
 header{
-    
     position:relative;
     width:100%;
     height:23%;
@@ -61,7 +60,6 @@ header{
 #headerInner{
     width:100%;
     height:100%;
-    
 }
 
 #homeWrap #logo{
@@ -358,7 +356,7 @@ display: inline-block;
         .glider{
             height:200px;
             width:94%;
-            margin-left:1.5%;
+            margin-left:3%;
         }
         
         .glider div{
@@ -368,7 +366,7 @@ display: inline-block;
         }
         
         .glider div img{
-            height:100px;
+            height:90px;
             width:auto;
             border: none;
             display: block;
@@ -458,7 +456,7 @@ display: inline-block;
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
-@media (max-width: 740px) {
+@media (max-width: 840px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
     
     #homeWrap{
