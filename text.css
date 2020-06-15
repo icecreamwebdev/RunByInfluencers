@@ -357,7 +357,12 @@ display: inline-block;
             height:200px;
             width:98%;
             margin-left:1%;
+            
         }
+
+.glider::-webkit-scrollbar {
+    display: none;
+}
         
         .glider div{
             width:20%;
@@ -484,10 +489,6 @@ background-size: cover;
     .glider div img{
             height:65px;
             width:auto;
-            border: none;
-            display: block;
-            margin:0 auto;
-            margin-top:50px;
         
         }
     
