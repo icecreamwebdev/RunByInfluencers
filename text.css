@@ -74,6 +74,15 @@ header{
   transform: translateY(-50%);
 }
 
+#homeWrap #logo .desktop{
+    display:block;
+}
+
+#homeWrap #logo .mobile{
+    display:none;
+
+}
+
 #homeWrap #menu{
 position: absolute;
   top: 50%;
@@ -483,6 +492,16 @@ background-size: 100%;
 background-size: cover;
 
     
+}
+    
+    
+#homeWrap #logo .desktop{
+    display:none;
+}
+
+#homeWrap #logo .mobile{
+    display:block;
+
 }
     
 
