@@ -485,6 +485,12 @@ background-size: cover;
     
 }
     
+    #homeWrapOverlay{
+    
+        background-color:rgba(4,13,33,0.25);
+    
+    }
+    
     .glider{
             height:200px;
             width:96%;
