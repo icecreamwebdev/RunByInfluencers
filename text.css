@@ -485,11 +485,7 @@ background-size: cover;
     
 }
     
-    #homeWrapOverlay{
-    
-        background-color:rgba(4,13,33,0.25);
-    
-    }
+
     
     .glider{
             height:200px;
@@ -592,9 +588,18 @@ background-size: cover;
   transform: translateY(-50%);
 }
 
-    
-    
+#homeMain #socialBar ul li{
 
+    margin-top:11px;
+    margin-left:7px;
+    font-size:14px;
+    opacity:1;
+    
+}
+ 
+    #homeMain #socialBar{
+        background-color:rgba(98, 10, 128,0.15);
+    }
 }
 
 @media (max-width: 640px){
