@@ -576,7 +576,7 @@ background-size: cover;
     }
     
     
-   
+    
     
     #homeWrapOverlay{
 width:100%;
@@ -607,6 +607,12 @@ width:100%;
         margin-top:10px;
         
     }
+    
+    #homeWrap #logo{
+
+    width:55%;
+    height:auto;
+}
     
 
 }
