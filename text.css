@@ -384,7 +384,7 @@ display: inline-block;
         }
         
         .glider div img{
-            height:80px;
+            height:90px;
             width:auto;
             border: none;
             display: block;
@@ -513,7 +513,7 @@ background-size: cover;
     }
 
     .glider div img{
-            height:65px;
+            height:80px;
             width:auto;
         
         }
@@ -525,7 +525,7 @@ background-size: cover;
     
     .glider div #audible{
             
-             height:85px;
+             height:95px;
                 width:auto;
 
         }
