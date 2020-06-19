@@ -517,6 +517,7 @@ background-size: cover;
             width:auto;
         
         }
+
     
         .glider div img:hover{
         
@@ -632,6 +633,13 @@ width:100%;
     width:65%;
     height:auto;
 }
+    
+    .glider div #betterhelp{
+            
+            height:70px;
+                width:auto;
+        }
+    
     
 
 }
