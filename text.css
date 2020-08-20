@@ -726,11 +726,13 @@ width:100%;
 
 #divider h1{
     font-size:13px;
+    padding-right:10px;
 
 }
     
 #divider h1 span{
       font-size:13px;  
+    padding-left:10px;
     }
     
     
