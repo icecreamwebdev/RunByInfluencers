@@ -721,6 +721,9 @@ width:100%;
     
 #divider h3{
     font-size:10px;
+        padding-left:10px;
+    
+
 
 }
 
@@ -732,7 +735,6 @@ width:100%;
     
 #divider h1 span{
       font-size:13px;  
-    padding-left:10px;
     }
     
     
