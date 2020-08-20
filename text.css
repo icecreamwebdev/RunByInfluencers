@@ -365,7 +365,7 @@ display: inline-block;
     height:1420px;
     min-height:1420px;
     background: url(miscImages/runByInfluencersMainImageBlur.jpg);
-        background-size: auto 100%;
+        background-size: 100% auto;
     background-repeat: repeat;
     position:relative;
     overflow:auto;
@@ -740,28 +740,33 @@ width:100%;
     
     
 #mainContentPage{
-    height:1200px;
-        
-    
-    }
+    width:100%;
+    height:1000px;
+    min-height:1420px;
+    background: url(miscImages/mainBackgroundUnfilteredMobile.jpg);
+        background-size: auto 100%;
+    background-repeat: repeat;
+    position:relative;
+    overflow:auto;
+}
     
 #section1{
     width:100%;
-    height:160px;
+    height:180px;
     background-color:rgba(27, 32, 52,0.92);
     margin-top:70px;
 
 }
 #section2{
     width:100%;
-    height:160px;
+    height:180px;
     background-color:rgba(27, 32, 52,0.92);
     margin-top:100px;
 
 }
 #section3{
     width:100%;
-    height:160px;
+    height:180px;
     background-color:rgba(27, 32, 52,0.92);
         margin-top:100px;
 }
