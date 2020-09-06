@@ -515,15 +515,33 @@ display: inline-block;
 
 }
 
+#mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer{
+    
+    position:relative;
+    
+}
+
 #mainContentPage .section .sectionMainContent .mainContentLeft img{
 
     float:left;
-    width:30%;
+    width:80%;
     height:auto;
-    margin-left:-4%;
+    margin-left:4%;
     background-color:;
 
 }
+
+#mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer .center-percent {
+  position: absolute;
+    color:white;
+    font-size:62px;
+    font-family:mainFontBold;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+
 
 #mainContentPage .section .sectionMainContent .mainContentLeft p{
     
@@ -537,7 +555,11 @@ display: inline-block;
     text-transform: uppercase;
     padding-left:35px;
 
+}
+#mainContentPage .section .sectionMainContent .mainContentLeft p span{
     
+
+    font-size:27px;
 
 
 }
@@ -1066,6 +1088,16 @@ width:100%;
 
     font-size:54px;
 }
+    
+    #mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer .center-percent {
+  position: absolute;
+    color:white;
+    font-size:55px;
+    font-family:mainFontBold;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
 
 
 #mainContentPage #mainSection3 .banner span{
@@ -1183,6 +1215,16 @@ width:100%;
 
 }
     
+      #mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer .center-percent {
+  position: absolute;
+    color:white;
+    font-size:50px;
+    font-family:mainFontBold;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+    
     
 
 }
@@ -1289,7 +1331,14 @@ background-size: cover;
 
 }
     
+#mainContentPage .section .sectionMainContent .mainContentLeft img{
 
+    float:left;
+    width:140px;
+    height:auto;
+    margin-left:4%;
+    background-color:;
+}
 
    
     #infoWrap h2{
@@ -1540,7 +1589,7 @@ width:100%;
     
     display:block;
     float:left;
-    background-color:#ff91cb  ;
+    background-color:#ff6cb9  ;
     font-family: 'Open Sans', sans-serif;
     font-weight:200;
     font-size:25px;
@@ -1618,13 +1667,23 @@ width:100%;
         height:auto;
         overflow: hidden;
     }
+    
+     #mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer .center-percent {
+  position: absolute;
+    color:white;
+    font-size:40px;
+    font-family:mainFontBold;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -55%);
+}
         
     
     
     
 }
 
-@media (max-width: 440px){
+@media (max-width: 490px){
 
     #infoWrap #brandsWrap{
         margin-top:10px;
@@ -1729,6 +1788,7 @@ width:100%;
     #mainContentPage .section .sectionMainContent .mainContentLeft img{
     
         margin-left:5%;
+        width:100px;
     }
     
     #mainContentPage .section .sectionMainContent .mainContentRight{
@@ -1829,6 +1889,10 @@ width:100%;
         text-align:center;
     }
     
+    #footer ul li a{
+        font-size:13px;
+    }
+    
 #mainContentPage{
     width:100%;
     height:auto;
@@ -1866,6 +1930,16 @@ width:100%;
     height:260px;
     background-color:rgba(27, 32, 52,0.7);
         margin-top:40px;
+}
+    
+      #mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer .center-percent {
+  position: absolute;
+    color:white;
+    font-size:40px;
+    font-family:mainFontBold;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -55%);
 }
     
 
