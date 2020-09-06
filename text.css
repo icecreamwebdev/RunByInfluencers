@@ -848,7 +848,7 @@ display: inline-block;
 }
 
 
-#contactBanner h2{
+#contactBanner h2 a{
     
     float:left;
     font-size:70px;
@@ -1106,7 +1106,7 @@ width:100%;
 
 }
     
-    #contactBanner h2{
+    #contactBanner h2 a{
         
         font-size:60px;
     }
@@ -1204,7 +1204,7 @@ width:100%;
 
 }
 
-      #contactBanner h2{
+      #contactBanner h2 a{
         
         font-size:42px;
     }
@@ -1418,7 +1418,7 @@ width:100%;
     }
     
     
-         #contactBanner h2{
+         #contactBanner h2 a{
         
         font-size:35px;
     }
@@ -1968,6 +1968,11 @@ width:100%;
     }
     
     #contactBanner h2{
+    
+        float:none;
+        text-align:center;
+    }
+    #contactBanner h2 a{
     
         float:none;
         text-align:center;
