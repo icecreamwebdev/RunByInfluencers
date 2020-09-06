@@ -1121,15 +1121,21 @@ width:100%;
     
     #mainContentPage #mainSection1{
         background:url(miscImages/section1Mobile.jpg);
+            background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 #mainContentPage #mainSection2{
         background:url(miscImages/section2Mobile.jpg);
+        background-repeat: no-repeat;
+    background-size: 100% auto;
 
 }
 
 #mainContentPage #mainSection3{
         background:url(miscImages/section3Mobile.jpg);
+        background-repeat: no-repeat;
+    background-size: 100% auto;
 
 }
     
@@ -1249,6 +1255,26 @@ background-size: 100%;
 background-size: cover;
 
     
+}
+    
+     #mainContentPage #mainSection1{
+        background:url(miscImages/section1Mobilev2.jpg);
+            background-repeat: repeat;
+    background-size: 100% auto;
+}
+
+#mainContentPage #mainSection2{
+        background:url(miscImages/section2Mobile.jpg);
+        background-repeat: no-repeat;
+    background-size: 100% auto;
+
+}
+
+#mainContentPage #mainSection3{
+        background:url(miscImages/section3Mobile.jpg);
+        background-repeat: no-repeat;
+    background-size: 100% auto;
+
 }
     
     
@@ -1683,8 +1709,66 @@ width:100%;
     
 }
 
+@media (max-width: 580px){
+
+#mainContentPage #mainSection3 .banner p{
+        
+        height:0 auto;
+        positon:relative;
+        line-height: normal;
+        font-size:20px;
+        padding-top:0px;
+    }
+    
+    #mainContentPage #mainSection3 .banner p span{
+        
+        font-size:20px;
+    }
+    
+    #mainContentPage #mainSection3 .banner a {
+    font-size: 15px;
+    padding: 13px;
+    margin-right: 4%;
+    line-height: 20px;
+    float: right;
+    text-decoration: none;
+    margin-top: 60px;
+        margin-left:4%;
+        margin-bottom:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+    color: white;
+    background: #bf54bb;
+}
+    
+    #mainContentPage #mainSection3 .banner {
+    height: 120px;
+}
+
+}
 @media (max-width: 490px){
 
+    
+     #mainContentPage #mainSection1{
+        background:url(miscImages/section1MobileMobile.jpg);
+             background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#mainContentPage #mainSection2{
+        background:url(miscImages/section2MobileMobile.jpg);
+        background-repeat: no-repeat;
+    background-size: auto 100%;
+
+}
+
+#mainContentPage #mainSection3{
+        background:url(miscImages/section3MobileMobile.jpg);
+        background-repeat: no-repeat;
+    background-size: auto 100%;
+
+}
+    
     #infoWrap #brandsWrap{
         margin-top:10px;
         
