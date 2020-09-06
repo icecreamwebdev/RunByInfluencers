@@ -1385,16 +1385,15 @@ width:100%;
         display:none;
     }
     
-    #divider h1{
-        
-        font-size:50px;
-        text-align:center;
+    #divider h1 {
+    font-size: 42px;
+    text-align: center;
+    height: 100px;
     float: none;
-    
-    }
+}
     #divider h1 span{
         
-        font-size:50px;
+        font-size:42px;
         text-align:center;
     
     }
