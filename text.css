@@ -9,7 +9,9 @@
 	margin:0px;
 	padding:0px;
     text-decoration:none;
-    box-sizing: border-box
+    box-sizing: border-box;
+        font-feature-settings: "kern"; 
+    font-smoothing: antialiased
 }
 
 html, body {
