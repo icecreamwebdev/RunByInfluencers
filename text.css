@@ -565,6 +565,7 @@ video{
         
         font-size:13px;
         padding:14px;
+        padding-left: 16px;
     }
     
     #section2 .content1{
@@ -1172,7 +1173,7 @@ align-items: center;
     color:yellow;
     font-family: mainFont;
     background-color:#1c1c1c;
-    padding-right:11px;
+    padding-right:10px;
     padding-left:3px;
 }
 
