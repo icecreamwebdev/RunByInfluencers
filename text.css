@@ -1079,7 +1079,7 @@ vertical-align:middle;
     float:right;
     background-color:;
     position:relative;
-    right:0;
+    right:8;
     top:25px;
         display: flex;
 justify-content: center; /* align horizontal */
@@ -1119,6 +1119,7 @@ align-items: center;
     vertical-align:middle;
 }
 
+.embed-container iframe {height:85%; width:auto;}
 
 #section5 .content2{
 
@@ -1229,7 +1230,7 @@ align-items: center;
     
         font-size:30px;
         line-height:30px;
-        bottom:0px;
+        bottom:10px;
     }
     
     #section5 .content1 #sideVideos{
