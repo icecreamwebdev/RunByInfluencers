@@ -14,2023 +14,1806 @@
 
 @font-face {
     font-family: mainFont;
-    src: url("fonts/GlacialIndifference-Regular.otf") format("opentype");
+    src: url("fonts/LibreFranklin-Black.ttf") format("TrueType");
 }
 
 
 @font-face {
-    font-family: mainFontBold;
-    src: url("fonts/GlacialIndifference-Bold.otf") format("opentype");
+    font-family: mainFontLight;
+    src: url("fonts/LibreFranklin-ExtraLight.ttf") format("TrueType");
 }
 
 
 #homeWrap{
     
     width:100%;
-    height:calc(100% - 100px);;
-    background-size:100% auto;
-
-    
+    height:92%;
 }
 
-#homeWrap #myVideo{
-    
-     position: fixed;
-  left: 0;
-  top: 0;
-    min-width: 100%;
-    min-height: 100%;
-    background-size:cover;
 
-}
-
-#homeWrap #myVideo img{
-        width:100%;
-    height:auto;
-    background-size:cover;
-
-}
-
-#homeWrapOverlay{
-width:100%;
-    height:100%;
-    position:relative;
-    background-color:rgba(4,13,33,0.02);
-
-}
-
+/************ header section ********/
 
 header{
-    position:relative;
     width:100%;
-    height:150px;
-
+    height:12%;
+    background-color:white;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#headerInner{
-    width:100%;
+header #headerLogo{
+    margin-left:10px;
     height:100%;
-}
-
-#homeWrap #logo{
-
-    float:left;
-    width:355px;
-    height:auto;
-    position: absolute;
-    top: 50%;
-    margin-left:1%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-#homeWrap #logo .desktop{
-    display:block;
-}
-
-#homeWrap #logo .mobile{
-    display:none;
-
-}
-
-#homeWrap #menu{
-position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-    float:right;
-    margin-right:5%;
-    right:0px;
-    
-}
-
-#homeWrap #menu h2{
-
-    font-size: 14px;
-    color:white;
-    opacity:0.9;
-}
-
-#homeWrap #logo img{
-    
-   max-width:100%;
-    height:auto;
-
-}
-
-#homeMain{
-    
-    width:60%;
-    height:50%;
-    margin-left:20%;
-    margin-top:7%;
-    
-}
-
-#homeMain h1{
-
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size:32px;
-    text-align:center;
-    padding-top:5px;
-    color:#022054;
-
-}
-#homeMain h1 span{
-        line-height:32px;
-        font-size:27px;
-}
-
-
-#homeMain h1 #forInfluencers{
-        font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-style: normal;
-    color:white ;
-    padding:2px;
-    padding-right:10px;
-    padding-left:10px;
-    font-size:32px;
-
-}
-
-#homeMain #socialBar{
-    
-    opacity:1;
-    font-size:4px;
-    color:white;
-    position:absolute;
-    width:35px;
-    top:45%;
-    right:15px;
-    border:2px solid white;
-    border-radius:20px;
-   padding-bottom: 11px;
-    z-index: 120;
-
-}
-
-#homeMain #socialBar:hover{
-    opacity:1;
-    border:2px solid #ff91cb;
-    background-color:rgba(98, 10, 128,0.2);
-}
-
-#homeMain #socialBar a{
-    color:white;
-}
-
-#homeMain #socialBar ul{
-
-    list-style: none;
-}
-
-#homeMain #socialBar ul li{
-
-    margin-top:11px;
-    margin-left:7px;
-    font-size:14px;
-    opacity:0.7;
-}
-
-
-#homeMain #socialBar ul li:hover{
-    
-    opacity:1;
-    cursor:pointer;
-}
-#homeMain #emailForm{
-    text-align: center;
-    margin-top:60px;
-    width:100%;
-    
-}
-
-#homeMain #emailForm #emailFormText{
-    text-align:center;
-    width:100%;
-
-}
-
-#homeMain #emailForm h3{
-    
-
-    color:#aeeb86;
-    font-size: 12px;
-    margin-bottom:2px;
-
-
-}
-
-#homeMain #emailForm h3 span{
-    opacity:1;
-        color:white;
-    font-size: 12px;
-    margin-bottom:2px;
-}
-
-#homeMain #emailForm input{
-
-
-display: inline-block;
-    width: 320px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: rgba(255,255,255,0.06);
-    margin-top: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: white;
-    margin-left:auto;
-    margin-left:0px;
-    outline:none;
-    border:1px solid white;
-}
-
-#homeMain #emailForm input:focus{
-    
-    outline:none;
-    
-
-}
-
-
-#homeMain #emailForm ::placeholder{
-    
-    color:white;
-    opacity:1;
-    cursor: text;
-
-}
-
-
-#welcomeSubmitButton {
-    height: 40px;
-    margin-top: 0px;
-    margin-right: 4px;
-    width: 40px;
-    background: url(miscImages/welcomeSubmit.png);
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
-    position: relative;
-    right: 0px;
-    top: -40px;
-    opacity: 0.6;
-    cursor: pointer;
-    position:absolute;
-    bottom:384px;
-    left:275px;
-    margin-left:433px;
-}
-
-#downArrow{
-    text-align:center;
-    width:100%;
-    height:50px;
     position:relative;
-    animation: arrow 1.5s linear infinite;
+    float:left;
 }
 
-#downArrow span{
-    pposition: fixed;
-  top: 52%;
+header #headerLogo img{
+    height:70%;
+    width:auto;
+    top:12%;
+}
+
+
+header #headerSocials{
+    flex: 1;
+  text-align: right;
+    margin-right:10px;
+}
+
+header #headerSocials ul{
+    list-style: none;
+
+}
+
+header #headerSocials ul li{
+    display:inline-block;
+  vertical-align: top;
+    background-color:black;
+    height:40px;
+    width:40px;
+    text-align:center;
+    padding-top:13px;
+    border-radius: 50%;
+    color:yellow;
+    margin:3px;
+}
+
+
+
+/********** header section ***********/
+
+/********* Main home section *********/
+
+#homeImage{
+    
+    width:100%;
+    height:88%;
+    overflow: hidden;
+    position: relative;
+}
+
+video{
+min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+    z-index: 10;
+}
+
+
+
+#homeImage #safetyBackground{
+    
+    min-height:100%;
+    min-width:100%;
+    position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+    z-index: 10;
+    display:none;
+}
+
+
+#homeText{
+    
+    position: absolute;
+  top: 50%;
   left: 50%;
   /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-    opacity:1;
-    color:white;
-
-
+  transform: translate(-50%, -40%);
+    color:transparent;
+    z-index:100;
 }
 
-@keyframes arrow {
-  0%   {top:0px;}
-  50%  { top:20px;}
-  100% {top:0px;}
-}
-
-#downArrow span:hover{
-    
-    opacity:1;
-    cursor:pointer;
-
-}
-
-#divider{
-    width:100%;
-    height:100px;
-    background-color:#111832 ;
-    position:relative;
-}
-
-#divider span{
-    color:#ff91cb;
-
-
-}
-
-#change{
-    color:#000;
-    font-family:arial;
-    padding:5px;
-    transition:opacity .5s linear;
-}
-.hide{
-    opacity:0;
-}
-
-
-
-
-#divider h3{
-    float:left;
-    color:white;
-    font-size:20px;
-    oapcity:0.8;
-    padding-left:20px;
-    margin-top:25px;
-    font-weight:300;
-    line-height:25px;
-    text-transform: uppercase;
-
-}
-
-#divider h3 a{
-    color:white;
-    margin-top:12px;
-    text-decoration: underline;
-    font-weight:600;
-    font-size:18px;
-    line-height:25px;
-}
-
-#divider h1{
-    
-    float:right;
-    color:white;
+#homeText h2{
+    color:yellow;
     font-size:80px;
-    line-height: 100px;
-    padding-right:20px;
-    float:right;
-    font-family: mainFontBold;
-    font-weight:600;
-
-}
-
-#divider h1 span{
-
-    font-size:100%;
-    font-weight:600;
-    font-size: 80px;
-    font-family: mainFontBold;
-    font-weight:600;
-}
-
-#mainContentPage{
-    width:100%;
-    height:2000px;
-    position:relative;
-    overflow:auto;
-}
-
-#mainContentPage .section{
-    
-    overflow:auto;
-    height:700px;
-    border-top:3px solid white;
-    position:relative;
-
-}
-
-#mainContentPage .banner{
-    
-    height:100px;
-    width:100%;
-    position:absolute;
-    bottom:0;
-    font-size:65px;
+    line-height:85px;
+    text-align:center;
     font-weight:800;
-    text-align: center;
-    
+    font-family: mainFont;
 }
 
-#mainContentPage #covidMobileBanner{
+#homeText h3{
+    color:transparent;
+    font-size:59px;
+    line-height:70px;
+    text-align: center;
+    font-family: mainFont;
+    -moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
+      -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: yellow;
+}
+
+#homeImage #downArrow{
     
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    z-index:100;
+    color:yellow;
+}
+
+
+
+@media (max-width: 580px){
+
+video{
     display:none;
 }
-
-
-
-#mainContentPage #mainSection3 .banner p{
     
-    height:100px;
-    position:absolute;
-    bottom:0;
-    font-size:64px;
-    font-weight:800;
-    text-align: left;
-    line-height:100px;
-    float:left;
-    margin-left:7%;
+#homeImage #safetyBackground{
+        display:block;
+    }
     
-}
-
-
-#mainContentPage #mainSection3 .banner a{
-
-    font-size:23px;
-    background-color:#bf54bb;
-    color:white;
-    float:right;
-    padding:20px;
-    border-radius: 40px;
-    line-height:30px;
-    margin-top:15px;
-    margin-right:7%;
-    z-index:100000;
-    
-    
-}
-
-#mainContentPage .section .sectionMainContent{
-    
-    width:90%;
-    margin-left:5%;
-    height:400px;
-    margin-top:40px;
-    background-color:;
-    display: inline-block;
-    
-
-}
-
-#mainContentPage  p{
-    
-   font-family: mainFontBold;
-
-}
-
-#mainContentPage  p span{
-    
-   font-family: mainFontBold;
-
-}
-
-#mainContentPage .section .sectionMainContent .mainContentLeft{
-
-    float:left;
-    height:100%;
-    width:50%;
-    background-color:;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    background-color:;
-}
-
-#mainContentPage .section .sectionMainContent .mainContentLeft h3{
-    
-    position:absolute;
-    right:10%;
-    bottom:78;
-
-}
-#mainContentPage .section .sectionMainContent .mainContentRight h3{
-    
-    position:absolute;
-    right:2%;
-    bottom:78;
-
-}
-
-#mainContentPage .section .sectionMainContent #mainContentLeft2 h3{
-    
-    right:15%;
-    bottom:90;
-
-}
-
-#mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer{
-    
-    position:relative;
-    
-}
-
-#mainContentPage .section .sectionMainContent .mainContentLeft img{
-
-    float:left;
-    width:80%;
-    height:auto;
-    margin-left:4%;
-    background-color:;
-
-}
-
-#mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer .center-percent {
-  position: absolute;
-    color:white;
-    font-size:62px;
-    font-family:mainFontBold;
-  top: 50%;
-  left: 46%;
-  transform: translate(-50%, -48%);
-}
-
-
-
-#mainContentPage .section .sectionMainContent .mainContentLeft p{
-    
-    float:right;
-    color:white;
-    text-align: left;
-    font-size:27px;
-    width:50%;
-    background-color:;
-    margin-right:10%;
-    text-transform: uppercase;
-    padding-left:35px;
-
-}
-#mainContentPage .section .sectionMainContent .mainContentLeft p span{
-    
-
-    font-size:27px;
-
-
-}
-
-#mainContentPage .section .sectionMainContent .mainContentRight{
-
-    float:right;
-    height:100%;
-    width:50%;
-    background-color:;
-        display: flex;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    background-color:;
-}
-
-
-#mainContentPage .section .sectionMainContent .mainContentRight img{
-
-    float:left;
-    width:30%;
-    height:auto;
-    margin-left:5%;
-    background-color:;
-
-}
-
-#mainContentPage .section .sectionMainContent .mainContentRight p{
-    
-    float:right;
-    color:white;
-    text-align: left;
-    font-size:27px;
-    text-transform: uppercase;
-    width:70%;
-    background-color:;
-    text-transform: uppercase;
-    padding-left:30px;
-
-
-}
-
-#mainContentPage .section .sectionMainContent .mainContentRight p span{
-    
-    font-size:27px;
-}
-
-
-#mainContentPage .section .sectionMainContent #mainContentLeft2 p{
-
-
-    width:70%;
-    padding-left:0px;
-    text-align:center;
-
-}
-
-#mainContentPage .section .sectionMainContent #mainContentRight2 p{
-    
-    width:50%;
-    font-size:40px;
-    text-align: center;
-    margin-top:0%;
-
-}
-
-#mainContentPage .section .sectionMainContent #mainContentRight2 p a{
-    
-    padding:20px;
-    background-color:rgba(230, 115, 210,0.6);
-    color:white;
-    font-size:20px;
-    margin-top:40px;
-    border-radius:50px;
-
-
-
-}
-
-#mainContentPage .section .sectionMainContent #mainContentRight2 img{
-    
-    margin-left:-10%;
-
-}
-
-#mainContentPage #mainSection1 h2{
-    
-    color:white;
-    font-size:23px;
-    text-transform: uppercase;
-    font-weight: 800;
-    text-align:center;
-    margin-top:70px;
-    width:96%;
-    margin-left:2%;
-}
-
-#mainContentPage #mainSection3 h2{
-    
-    color:white;
-    font-size:23px;
-    text-transform: uppercase;
-    font-weight: 800;
-    text-align:center;
-    margin-top:70px;
-    width:96%;
-    margin-left:2%;
-}
-
-#mainContentPage #mainSection1 h2 span{
-    
-    color:#34c3e6;
-    font-size:23px;
-    font-weight:800;
-}
-
-
-#mainContentPage .banner{
-
-    font-family: mainFontBold;
-}
-
-#mainContentPage .banner span{
-
-    font-family: mainFontBold;
-}
-
-
-
-
-#mainContentPage #mainSection1 #section1Banner {
-
-    background-color:#34c3e6 ;
-    font-family: 'Open Sans', sans-serif;
-    font-weight:800;
-    font-size:80px;
-    font-style: italic;
-    text-decoration: line-through;
-}
-
-
-
-
-#mainContentPage #mainSection2 .banner{
-
-    height:220px;
-    text-align: center;
-    color:white;
-    font-size:64px;
-    text-transform: uppercase;
-    width:98%;
-    margin-left:1%;
-}
-
-#mainContentPage #mainSection2 .banner span{
-    
-    color:#34c3e6;
-    font-size:70px;
-
-}
-
-
-
-#mainContentPage #mainSection3 .banner {
-
-    background-color:#ff6cb9;
-    text-transform: uppercase;
-    color:white;
-    font-size:64px;
-}
-
-
-#mainContentPage #mainSection3 .banner span{
-    
-    color:black;
-    font-size:64px;
-
-}
-
-
-#mainContentPage #mainSection1{
-        background:url(miscImages/section1Desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-}
-
-#mainContentPage #mainSection2{
-        background:url(miscImages/section2Desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-}
-
-#mainContentPage #mainSection3{
-        background:url(miscImages/section3desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    border-bottom:3px solid white;
-    height:600px;
-}
-
-#mainContentPage .section .sectionMainContent #mainContentRight3{
-
-    float:right;
-    height:100%;
-    width:75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-}
-
-#mainContentPage .section .sectionMainContent #mainContentRight3 img{
-
-    float:left;
-    width:auto;
-    height:48%;
-    margin-left:5%;
-    background-color:;
-
-}
-
-#mainContentPage .section .sectionMainContent #mainContentRight3 p{
-    
-    padding-left:80px;
-}
-    
-
-#mainContentPage #mainSection3 .sectionMainContent{
-
-    margin-top: 0px;
-}
-
-
-#infoWrap{
-    width:100%;
-    height:410px;
-    background-color:#1b2034 ;
-    background-color:#111832;
-    position:relative;
-}
-
-#infoWrapInner{
-    position:relative;
-    width:100%;
-    left:0%;
-}
-
-#infoWrap h2{
-    text-align:left;
-    padding-left:30px;
-    padding-right:30px;
-    padding-top:40px;
-    font-size:22px;
-    font-weight: 700;
-    color:white;
-    margin-bottom:30px;
-}
-
-#infoWrap h2 span{
-    color:#ff91cb ;
-    font-size:22px;
-    font-weight: 700;
-}
-
-#infoWrap #brandsWrap{
-    
-    width:100%;
-    height:130px;
-    margin-top:30px;
-    margin-bottom:30px;
-
-}
-
-
-#contactBanner{
-    
-    width:100%;
-    height:100px;
-    background-color: #34c3e6;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    font-size: 80px;
-    position:relative;
-    display:inline-block;
-}
-
-
-#contactBanner h2 a{
-    
-    float:left;
-    font-size:70px;
-    color:black;
-    text-align: left;
-    line-height:100px;
-    margin-left:5%;
-    font-family: mainFontBold;
-
-}
-
-
-#contactBanner #contactEmail{
-    
-    float:left;
-    font-size:27px;
-    color:black;
-    text-align: center;
-    margin-left:10%;
-    line-height: 100px;
-    z-index: 10000;
-
-}
-
-#contactBanner #contactMobile{
-    
-    float:right;
-    font-size:27px;
-    color:black;
-    text-align: right;
-    margin-right:5%;
-    line-height:100px;
-
-}
-
-
-
-#footer{
-
-width:100%;
-    height:auto;
-    background-color:#111832 ;
-    position:relative;
-}
-
-#footer p{
-    padding-top:60px;
-    font-size:24px;
-    color:#d6f7ff;
-    text-align: center;
-    font-weight: 100;
-    text-transform: uppercase;
-}
-
-#footer ul{
-    padding-top:60px;
-    text-align: center;
-    list-style: none;
-    margin:0 auto;
-    padding-bottom:30px;
-}
-
-#footer ul li{
-    
-    font-size:20px;
-    display:inline-block;
-    color:white;
-    padding:5px;
-    border-right:1px solid white;
-}
-
-#footer ul li a{
-    
-    font-size:18px;
-    color:#d6f7ff;
-    text-decoration: none;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-#footer ul #last{
-
-    border:0 none;
-}
-
-
-
-
-
-
-.glider-contain {
-            
-            width: 100%;
-            
-        }
-        .glider-slide {
-            min-height: 150px;
-        }
-        .glider-slide img {
-            width: 100%;
-        }
+    #homeText h2{
         
-        .glider{
-            height:200px;
-            width:98%;
-            margin-left:1%;
-            
-        }
-
-.glider::-webkit-scrollbar {
-    display: none;
-}
-        
-        .glider div{
-            width:20%;
-            height:200px;
-        }
-
-        .glider div:hover > img{
-        
-            opacity:0.6;
-        }
-        
-        .glider div img{
-            height:90px;
-            width:auto;
-            border: none;
-            display: block;
-            margin:0 auto;
-            margin-top:55px;
-        
-        }
-        
-        .glider div #audible{
-            
-            height:110px;
-                width:auto;
-            margin-top:45px;
-        }
-
-#infoWrap #selctionroller{
-    width:100%;
-    height:30px;
-    margin-top:0px;
-    
-}
-#infoWrap #selctionroller ul{
-    width:66px;
-    height:22px;
-    position:absolute;
-    left:50%;
-    margin-left:-33px;
-    position:absolute;
-    list-style: none;
-    text-align:center;
-}
-
-#infoWrap #selctionroller ul li{
-    
-        display:inline;
-    font-size:40px;
-    font-weight:800;
-    opacity:0.5;
-    float:left;
-    display:block;
-    text-align:center;
-    padding:4px;
-}
-
-
-#infoWrap #selctionroller ul li:hover{
-
-    opacity:1;
-}
-
-#infoWrap #selctionroller ul li.circleOn{
-
-            color:#fd69b7;
-    opacity:1;
-}
-
-#infoWrap #selctionroller ul li a{
-    
-    color:white;
-    border-style: none;
-    border:none;
-    padding:none;
-    font-size:40px;
-    font-weight:800;
-    
-}
-
-#infoWrap #selctionroller ul #circleOn a{
-
-    color:#fd69b7;
-    border-style: none;
-    border:none;
-    padding:none;
-    font-size:40px;
-    font-weight:800;
-    
-
-}
-
-
-/* for smaller devices */
-
-/* for smartphones and portrait tablet */
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (max-width:1281px) { 
-    
-
-    
-    #divider h1{
-        font-size:60px;
-    } 
-    
-    #divider h1 span{
-    font-size: 60px;
-        }
-    
-    #mainContentPage #mainSection2 .banner{
-        font-size:54px;
-        }
-        
-    #mainContentPage #mainSection2 .banner span{
-        font-size:54px;
-        }
-    
-    
-
-#mainContentPage #mainSection3 .banner p {
-
-
-    font-size:54px;
-}
-    
-    #mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer .center-percent {
-  position: absolute;
-    color:white;
-    font-size:55px;
-    font-family:mainFontBold;
-  top: 50%;
-  left: 47%;
-  transform: translate(-50%, -50%);
-}
-
-
-#mainContentPage #mainSection3 .banner span{
-    
-    font-size:54px;
-
-}
-    
-    #contactBanner h2 a{
-        
-        font-size:60px;
-    }
-
-
-#contactBanner #contactEmail{
-    margin-left:7%;
-
-}
-     
-@media (max-width:1090px) { 
-    
-    #mainContentPage #mainSection1{
-        background:url(miscImages/section1Mobile.jpg);
-            background-repeat: no-repeat;
-    background-size: 100% auto;
-}
-
-#mainContentPage #mainSection2{
-        background:url(miscImages/section2Mobile.jpg);
-        background-repeat: no-repeat;
-    background-size: 100% auto;
-
-}
-
-#mainContentPage #mainSection3{
-        background:url(miscImages/section3Mobile.jpg);
-        background-repeat: no-repeat;
-    background-size: 100% auto;
-
-}
-    
-    #mainContentPage .section .sectionMainContent .mainContentLeft p{
-    
-    font-size:22px;   
-}
-    #mainContentPage .section .sectionMainContent .mainContentRight p{
-    
-    font-size:22px;   
-}
-    
-    
-#mainContentPage .section .sectionMainContent .mainContentRight p span{
-    
-    font-size:22px;
-}
-    
-    #mainContentPage .section .sectionMainContent #mainContentRight2 p{
-        font-size:22px;
-        width:70%;
-    }
-    
-    
-    #divider h3{
-        font-size: 16px;
-    }
-    #divider h3 a{
-        font-size: 16px;
-    }
-    
-    #divider h1{
-        font-size:40px;
-    }
-    
-    #divider h1 span{
-    font-size: 40px;
-        }
-    
-        
-    #mainContentPage #mainSection2 .banner{
-        font-size:44px;
-        }
-        
-    #mainContentPage #mainSection2 .banner span{
-        font-size:44px;
-        }
-    
-    
-#mainContentPage #mainSection3 .banner p {
-
-
-    font-size:38px;
-}
-
-
-#mainContentPage #mainSection3 .banner span{
-    
-    font-size:38px;
-
-}
-
-#mainContentPage #mainSection3 .banner a{
-    
-    font-size:19px;
-
-}
-
-      #contactBanner h2 a{
-        
-        font-size:42px;
-    }
-
-
-#contactBanner #contactEmail{
-    margin-left:8%;
-    font-size:22px;
-
-}
-
-#contactBanner #contactMobile{
-    font-size:22px;
-
-}
-    
-      #mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer .center-percent {
-  position: absolute;
-    color:white;
-    font-size:50px;
-    font-family:mainFontBold;
-  top: 50%;
-  left: 47%;
-  transform: translate(-50%, -50%);
-}
-    
-    
-
-}
-        
-    /* hi-res laptops and desktops */ }
-
-@media (max-width: 840px) {
-  /* CSS that should be displayed if width is equal to or less than 800px goes here */
-    
-    #homeWrap{
-    
-    width:100%;
-    height:90%;
-    background-image:url(miscImages/Mobile_Website_v2.jpg);
-    -webkit-background-size: 100%; 
--moz-background-size: 100%; 
--o-background-size: 100%; 
-background-size: 100%; 
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-
-    
-}
-    
-     #mainContentPage #mainSection1{
-        background:url(miscImages/section1Mobilev2.jpg);
-            background-repeat: repeat;
-    background-size: 100% auto;
-}
-
-#mainContentPage #mainSection2{
-        background:url(miscImages/section2Mobile.jpg);
-        background-repeat: no-repeat;
-    background-size: 100% auto;
-
-}
-
-#mainContentPage #mainSection3{
-        background:url(miscImages/section3Mobile.jpg);
-        background-repeat: no-repeat;
-    background-size: 100% auto;
-
-}
-    
-    
-#homeWrap #logo .desktop{
-    display:none;
-}
-
-#homeWrap #logo .mobile{
-    display:block;
-
-}
-    
-
-    
-    .glider{
-            height:200px;
-            width:96%;
-            margin-left:2%;
-    }
-
-    .glider div img{
-            height:80px;
-            width:auto;
-        
-        }
-
-    
-        .glider div img:hover{
-        
-            opacity:0.5;
-        }
-    
-    .glider div #audible{
-            
-             height:95px;
-                width:auto;
-
-        }
-    
-    #homeWrap #myVideo{
-    
-        display:none;
-    
-    }
-    
-    #infoWrap #brandsWrap{
-        margin-top:20px;
-        
-    }
-    
-
-    
-    #homeMain h1{
-        font-size:24px;
-    }
-    
-    #homeMain{
-        width:80%;
-    margin-left:10%;
-    margin-top:4%;
-    }
-    
- 
-    
-    #homeMain #emailForm input{
-        width:80%;
-    }
-    
-    #homeMain #emailForm{
-        margin-top:50px;
-    }
-    
-    #infoWrap{
-        width:100%;
-        height:420px;
-    }
-    
-    #homeMain h1 #forInfluencers{
-    font-size:28px;
-
-}
-    
-#mainContentPage .section .sectionMainContent .mainContentLeft img{
-
-    float:left;
-    width:140px;
-    height:auto;
-    margin-left:4%;
-    background-color:;
-}
-
-   
-    #infoWrap h2{
-        font-size:22px;
-    }
-    
-    #infoWrap h2 span{
-    
-        font-size:22px;
-    }
-
-    
-    header{
-        padding-top:20px;
-    }
-    
-    #infoWrap #selctionroller{
-    margin-top:0px;
-    }
-    
-    
-    
-    
-    #homeWrapOverlay{
-width:100%;
-    height:100%;
-    position:relative;
-    background-color:rgba(4,13,33,0.1);
-
-}
-
-#homeMain #socialBar ul li{
-
-    margin-top:11px;
-    margin-left:7px;
-    font-size:14px;
-    opacity:1;
-    
-}
-    
- 
-    #homeMain #socialBar{
-        background-color:rgba(98, 10, 128,0.15);
-    }
-    
-    #mainContentPage #mainSection1 #section1Banner{
-        
-        font-size:60px;
-        line-height:100px;
-    
-    }
-    
-    
-         #contactBanner h2 a{
-        
-        font-size:35px;
-    }
-
-
-#contactBanner #contactEmail{
-    margin-left:7%;
-    font-size:18px;
-
-}
-
-#contactBanner #contactMobile{
-    font-size:18px;
-
-}
-    
-    #mainContentPage #mainSection3 .banner p{
-    
-        margin-left:4%;
-        font-size:30px;
-    }
-    #mainContentPage #mainSection3 .banner p span{
-    
-        
-        font-size:30px;
-    }
-    
-    #mainContentPage #mainSection3 .banner a{
-    
-        
-        font-size:15px;
-        padding:16px;
-        margin-right:4%;
-            line-height: 20px;
-    margin-top: 23px;
-    }
-    
-    #divider h3{
-        display:none;
-    }
-    
-    #divider h1 {
-    font-size: 42px;
-    text-align: center;
-    height: 100px;
-    float: none;
-}
-    #divider h1 span{
-        
-        font-size:42px;
-        text-align:center;
-    
-    }
-    
- #mainContentPage #mainSection1 h2{
-    
-     margin-top: 0px;
-    width: 100%;
-    height: auto;
-    padding-top: 25px;
-     padding-bottom:25px;
-    background-color: #34c3e6;
-    padding-left: 2%;
-     padding-right:2%;
-     margin:0;
-     color:black;
-     font-size:22px;
- 
- }
-    
-     #mainContentPage #mainSection1 h2 span{
-        
-         color:black;
-         font-size:22px;
-     
-     }
-    
-    #mainContentPage #mainSection1 #section1Banner{
-        
-            position: absolute;
-    top: 140px;
         font-size:50px;
-    color: white;
-        background-color:transparent;
-        float:left;
-    
+        line-height:55px;
     }
-    
-    #mainContentPage .section .sectionMainContent{
-    float:left;
-    }
-    
-    #mainContentPage .section .sectionMainContent .mainContentLeft{
-        float:left;
-        width:100%;
-        height:auto;
-        margin-top:130px;
-    }
-    #mainContentPage .section .sectionMainContent .mainContentRight{
-        float:left;
-        width:100%;
-        height:auto;
-        margin-top:70px;
-    }
-    
-        #mainContentPage .section .sectionMainContent #mainContentRight1 img{
-        display:none;
-            
-        }
-    #mainContentPage .section .sectionMainContent .mainContentRight p{
+    #homeText h3{
         
-        width:90%;
-        font-size:30px;
-    
+        font-size:42px;
+        line-height:40px;
     }
     
-    #mainContentPage .section .sectionMainContent .mainContentRight p span{
-        
-        font-size:30px;
+    header #headerLogo img{
+    height:45%;
+    width:auto;
+    top:27.5%;
+}
+}
+
+
+
+/**************** Main home section ******************/
+
+
+
+/***************** start section1 ********************/
+
+#section1{
     
-    }
-    
-    #mainContentPage .section .sectionMainContent .mainContentLeft h3{
-    
-        position:absolute;
-        right:10px;
-        bottom:0px;
-    }
-    #mainContentPage .section .sectionMainContent .mainContentRight h3{
-    
-        position:absolute;
-        right:10px;
-        bottom:-40px;
-    }
-    
-    #mainContentPage .section{
-        
-        height:750px;
-    }
-    
-    #mainContentPage .section .sectionMainContent #mainContentLeft2 p{
-     
-        text-align: center;
-        font-size:30px;
-        width:100%;
-        margin:0;
-    }
-        
-    
-    #mainContentPage .section .sectionMainContent #mainContentLeft2 h3{
-        
-         position:absolute;
-        right:10px;
-        bottom:-40px;
-    
-    }
-    
-    
-    
-    #mainContentPage .section .sectionMainContent #mainContentRight2{
-     
-        width:70%;
-        margin-left:15%;
-        margin-top:100px;
-    }
-    
-    #mainContentPage #mainSection2 .banner{
-        
-        margin-top: 0px;
-    width: 100%;
-    height: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: #34c3e6;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin: 0;
-    color: black;
-    font-size: 22px;
-    }
-    #mainContentPage #mainSection2 .banner span{
-        font-size:22px;
-        color:black;
-    }
-    
-    #mainContentPage .section .sectionMainContent #mainContentRight2 p a{
-    
-        font-size:16px;
-        padding:16px;
-    }
-    
-    
-#mainContentPage #covidMobileBanner{
-    
+    height:500px;
+    background-color:white;
+    width:100%;
+
+}
+
+#section1 .block{
+    disply:block;
+    width:1000px;
+    margin:0 auto;
+    margin-top:15px;
+    height:235px;
+}
+
+
+#section1 .block .division1{
     display:block;
     float:left;
-    background-color:#ff6cb9  ;
-    font-family: 'Open Sans', sans-serif;
-    font-weight:200;
-    font-size:25px;
-    text-align: left;
+    width:49%;
+    height:100%;
+    margin-left:0px;
 }
+
+#section1 .block .division1 p{
     
-#mainContentPage #covidMobileBanner h3{
-    color:black;
-    font-size:25px;
-    font-weight:300;
-    line-height:25px;
-    text-transform: uppercase;
-    text-align: right;
-    margin:0 auto;
-    padding-top:20px;
-    width:90%;
-    margin-right:5%;
-
+    position:relative;
+    left:0;
+    color:transparent;
+    width:32%;
+    letter-spacing: 6px;
+    height:100%;
+    font-size:47px;
+    padding:10px;
+    text-align: center;
+    background-color:#1c1c1a;
+    float:left;
+          -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: yellow;
 }
 
-#mainContentPage #covidMobileBanner h3 a{
-    color:black;
-    margin-top:0px;
-    text-decoration: underline;
-    font-weight:600;
-    font-size:18px;
-    margin-top:5px;
-    text-align: right;
+#section1 .block .division1 .divisionImg{
+    
+    width:68%;
+    position:relative;
+    right:0;
+    height:100%;
     float:right;
-    
+    object-fit: cover;
     
 }
-    
-     #mainContentPage #mainSection1{
-     
-        height:800px;
-     }
-     #mainContentPage #mainSection2{
-     
-        height:600px;
-     }
-    
-        #mainContentPage #mainSection2 .sectionMainContent .mainContentLeft{
-            
-            margin-top:40px;
-        
-        }
-    
-    #mainContentPage .section .sectionMainContent #mainContentRight3{
-    
-        margin-top:40px;
-        height:40%;
-        width:80%;
-        margin-left:10%;
-        float:left;
-    }
-    
-        #mainContentPage .section .sectionMainContent #mainContentRight3 img{
-        height:120px;
-            width:auto;
-        
-        }
-    
-        #mainContentPage .section .sectionMainContent #mainContentRight3 p{
-        text-align:right;
-        
-        }
-    
-    #mainContentPage .section .sectionMainContent{
-        
-     height:auto;   
-    }
-    
-    #mainContentPage{
-        height:auto;
-        overflow: hidden;
-    }
-    
-     #mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer .center-percent {
-  position: absolute;
-    color:white;
-    font-size:40px;
-    font-family:mainFontBold;
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -55%);
+
+
+#section1 .block .division2{
+    display: block;
+    float:right;
+    width:49%;
+    height:100%;
+    margin-right:0px;
 }
+
+
+#section1 .block .division2 p{
+    position:relative;
+    left:0;
+    color:transparent;
+    width:32%;
+    letter-spacing: 6px;
+    height:100%;
+    font-size:47px;
+    padding:10px;
+    text-align: center;
+    background-color:#1c1c1a;
+    float:left;
+          -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: yellow;
+}
+
+
+#section1 .block .division2 .divisionImg{
+    
+    width:68%;
+    position:relative;
+    right:0;
+    height:100%;
+    float:right;
+    object-fit: cover;
+    
+}
+
+@media (max-width: 1080px){
+
+#section1 .block{
+    
+    width:700px;
+}
+}
+
+@media (max-width: 730px){
+
+    #section1 .block{
+    
+    width:97%;
+}
+    
+    #section1 .block .division1 p{
         
-    
-    
-    
+    width: 32%;
+    letter-spacing: 4px;
+    line-height: 53px;
+    font-size: 35px
+        
+    }
+    #section1 .block .division2 p{
+        
+    width: 32%;
+    letter-spacing: 4px;
+    line-height: 53px;
+    font-size: 35px
+        
+    }
 }
 
 @media (max-width: 580px){
 
-#mainContentPage #mainSection3 .banner p{
-        
-        height:0 auto;
-        positon:relative;
-        line-height: normal;
-        font-size:20px;
-        padding-top:0px;
+#section1 .block{
+    
+    width:97%;
+}
+   #section1 .block .division1 p{ 
+    width: 35%;
+    letter-spacing: 2px;
+    line-height: 45px;
+       font-size:26px;
+   }
+   #section1 .block .division2 p{ 
+    width: 35%;
+    letter-spacing: 2px;
+    line-height: 45px;
+       font-size:26px;
+   }
+    
+    #section1 .block .division1 .divisionImg {
+    width: 65%;
     }
     
-    #mainContentPage #mainSection3 .banner p span{
-        
-        font-size:20px;
+    #section1 .block .division2 .divisionImg {
+    width: 65%;
     }
     
-    #mainContentPage #mainSection3 .banner a {
-    font-size: 15px;
-    padding: 13px;
-    margin-right: 4%;
-    line-height: 20px;
-    float: right;
-    text-decoration: none;
-    margin-top: 60px;
-        margin-left:4%;
-        margin-bottom:10px;
-        padding-top:10px;
-        padding-bottom:10px;
-    color: white;
-    background: #bf54bb;
-}
-    
-    #mainContentPage #mainSection3 .banner {
-    height: 120px;
-}
-
-}
-@media (max-width: 490px){
-
-    
-     #mainContentPage #mainSection1{
-        background:url(miscImages/section1MobileMobile.jpg);
-             background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-
-#mainContentPage #mainSection2{
-        background:url(miscImages/section2MobileMobile.jpg);
-        background-repeat: no-repeat;
-    background-size: auto 100%;
-
-}
-
-#mainContentPage #mainSection3{
-        background:url(miscImages/section3MobileMobile.jpg);
-        background-repeat: no-repeat;
-    background-size: auto 100%;
-
-}
-    
-    #infoWrap #brandsWrap{
-        margin-top:10px;
-        
+    #section1{
+        height:430px;
     }
     
-    #homeWrap #logo{
+    #section1 .block{
+        
+        height:200px;
+    }
+    
+    
+    @media (max-width: 400px){
+    
+        #section1 .block .division1 p{ 
+    line-height: 37px;
+       font-size:24px;
+   }
+   #section1 .block .division2 p{ 
+    width: 35%;
+    letter-spacing: 2px;
+    line-height: 37px;
+       font-size:24px;
+   }
+        
+    #section1{
+        height:350px;
+    }
+    
+    #section1 .block{
+        
+        height:160px;
+    }
+    
+    
+    }
+}
+
+
+/***************** End section1 ********************/
+
+/***************** start section2 ********************/
+
+#section2{
+    
+    height:700px;
+    width:100%
+    background-color:blue;
+    background: url(section2BackgroundB.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size:cover;
+    margin-bottom:0px;
+    position:relative;
+    display: block;
+}
+
+#section2 .content1{
 
     width:65%;
-    height:auto;
+    height:400px;
+    background-color:yellow;
+    position:absolute;
+    left:0px;
+    top:50px;
+    display:flex;
+}
+
+#section2 .content1 p{
+    
+    width:80%;
+    padding:30px;
+    vertical-align:middle;
+    color:black;
+    font-family: mainFont;
+    font-size:55px;
+    line-height:58px;
+    text-align: left;
+    align-self: center;
+}
+
+#section2 .content1 p span{
+    font-style:italic;
+    font-size:55px;
+    line-height:58px;
+    font-family: mainFont;
+}
+
+#section2 .content2{
+
+    width:40%;
+    height:300px;
+    position:absolute;
+    right:5%;
+    top:300px;
+    background-color:#1c1c1a;
+    display: flex;
+    
+}
+
+
+#section2 .content2 p{
+    
+    padding:30px;
+    vertical-align:middle;
+    color:white;
+    font-size:18px;
+    text-align: left;
+    align-self: center;
+    font-family:mainFont;
+}
+
+
+@media (max-width: 890px){
+
+    #section2 .content2 p{
+        
+        font-size:16px;
+    }
+    
+    #section2 .content1 p {
+        font-size:45px;
+        line-height:45px;
+    }
+    #section2 .content1 p span{
+        font-size:45px;
+        line-height:45px;
+    }
+
+    
+
+}
+@media (max-width: 730px){
+
+    #section2 .content2 p{
+        
+        font-size:14px;
+    }
+    
+    #section2 .content1 p {
+        font-size:40px;
+        line-height:40px;
+    }
+    #section2 .content1 p span{
+        font-size:40px;
+        line-height:40px;
+    }
+  
+
+}
+
+@media (max-width: 605px){
+#section2 .content2{
+
+    width:45%;
+    right:0;
 }
     
-    #divider h1{
+    
+    
+    #section2 .content2 p{
         
-        font-size:32px;
+        font-size:14px;
+        padding:15px;
     }
     
-    #divider h1 span{
-        
-        font-size:32px;
+    #section2 .content1 p {
+        font-size:35px;
+        line-height:35px;
+    }
+    #section2 .content1 p span{
+        font-size:35px;
+        line-height:35px;
+    }   
+
+}
+
+@media (max-width: 505px){
+#section2 .content2{
+
+    width:48%;
+    right:0;
+    height:380px;
+    top:270px;
+}
     
+    
+    
+    #section2 .content2 p{
+        
+        font-size:14px;
+        padding:10px;
     }
     
-    #mainContentPage #mainSection1 #section1Banner{
+    #section2 .content1{
+    
+        height:330px;
+    }
+    
+    #section2 .content1 p {
+        font-size:28px;
+        line-height:28px;
+        padding:20px;
+    }
+    #section2 .content1 p span{
+        font-size:28px;
+        line-height:28px;
+    }   
+
+}
+
+@media (max-width: 405px){
+    #section2 .content1 p {
+        font-size:23px;
+        line-height:23px;
+    }
+    #section2 .content1 p span{
+        font-size:23px;
+        line-height:23px;
+    }  
+
+}
+
+@media (max-width: 330px){
+    #section2 .content1 p {
+        font-size:20px;
+        line-height:20px;
+    }
+    #section2 .content1 p span{
+        font-size:20px;
+        line-height:20px;
+    }  
+    
+    #section2 .content2 p{
+        
+        font-size:12px;
+        padding:10px;
+    }
+
+}
+
+
+/***************** End section2 ********************/
+
+
+/***************** start section3 ********************/
+
+#section3{
+    
+        height:700px;
+    background-color:blue;
+    width:100%;
+    background: url(section3Background.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size:cover;
+    position:relative;
+}
+
+
+
+#section3 .content1{
+
+    width:40%;
+    height:650px;
+    background-color:rgba(41, 46, 42,0.8);
+    position:absolute;
+    left:4%;
+    top:0px;
+}
+
+#section3 .content1 h1{
+    width:100%;
+    height:20%;
+    color:yellow;
+    font-family: mainFont;
+    font-size:40px;
+    text-align: center;
+    padding-top:7%;
+    text-transform: uppercase;
+    float:left;
+}
+
+#section3 .content1 ul{
+
+    float:left;
+    width:85%;
+    margin-left:6%;
+    list-style: none;
+
+}
+
+#section3 .content1 ul li{
+    
+    color:white;
+    width:50%;
+    height:16%;
+    float:left;
+    background-color:;
+    display:block;
+
+}
+
+#section3 .content1 ul li img{
+    display:block;
+    margin:auto;
+    margin:0 auto;
+        width:110%;
+    height:auto;
+    text-align:center;
+vertical-align:middle;
+}
+
+
+#section3 .content2 p{
+    
+    width:100%;
+    padding:30px;
+    vertical-align:middle;
+    color:black;
+    font-family: mainFont;
+    font-size:55px;
+    line-height:58px;
+    text-align: left;
+    align-self: center;
+}
+
+#section3 .content2 p span{
+    font-style:italic;
+    font-size:30px;
+    line-height:30px;
+    font-family: mainFont;
+}
+
+
+
+#section3 .content2{
+
+    width:45%;
+    height:340px;
+    position:absolute;
+    right:0;
+    top:220px;
+    background-color:white;
+    display: flex;
+    
+}
+
+
+@media (max-width: 1200px){
+    
+    #section3 .content1 h1{
+        font-size:30px;
+    }
+    
+    #section3 .content2 p{
+        
+        font-size:43px;
+        line-height:43px;
+    }
+    #section3 .content2 p span{
+        
+        font-size:25px;
+    }
+}
+
+@media (max-width: 900px){
+    
+    #section3 .content1 h1{
+        font-size:20px;
+    }
+    
+    #section3 .content2 p{
         
         font-size:35px;
+        line-height:35px;
     }
-    
-    #mainContentPage .section .sectionMainContent .mainContentLeft p{
+    #section3 .content2 p span{
         
-        font-size:18px;
-    }
-    
-    #mainContentPage .section .sectionMainContent .mainContentRight p{
-        
-        font-size:24px;
-    
-    }
-       
-    
-    #mainContentPage .section .sectionMainContent .mainContentRight p span{
-        
-        font-size:24px;
-    
-    }
-    
-    #mainContentPage .section .sectionMainContent #mainContentLeft2 p{
-        
-        font-size:21px;
-    
-    }
-        
-    
-    #mainContentPage .section .sectionMainContent #mainContentLeft2 p span{
-        
-        font-size:21px;
-    
-    }
-        
-    #mainContentPage #covidMobileBanner h3{
-    
-        
-        font-size:18px;
-    }
-    
-    #mainContentPage .section .sectionMainContent #mainContentRight2 {
-    width: 95%;
-    margin-left: 2.5%;
-    margin-top: 100px;
-}
-    
-    #mainContentPage #mainSection3 h2{
-        
-        font-size:20px;
-    }
-    
-    #mainContentPage .section .sectionMainContent #mainContentRight3 {
-    width: 90%;
-    margin-left: 5%;
-}
-    
-    #mainContentPage #mainSection1 {
-    height: 810px;
-}
-    
-    #mainContentPage #mainSection1 #section1Banner{
-        top:170px;
-        height:100px;
-    }
-    
-    #mainContentPage .section .sectionMainContent .mainContentLeft h3 {
-    position: absolute;
-    right: 10px;
-    bottom: -40px;
-}
-    
-    #mainContentPage .section .sectionMainContent .mainContentLeft p{
-        
-        width:80%;
-    }
-    
-    #mainContentPage .section .sectionMainContent .mainContentLeft img{
-    
-        margin-left:5%;
-        width:100px;
-    }
-    
-    #mainContentPage .section .sectionMainContent .mainContentRight{
-        margin-top:90px;   
-    }
-    
-    #mainContentPage #covidMobileBanner h3 a{
-    
-        margin-bottom:10px;
-    }
-    #mainContentPage .banner{
-    
-        height:auto;
-    }
-    
-    #mainContentPage .section .sectionMainContent #mainContentRight2 {
-    width: 100%;
-    margin-left: 0%;
-}
-    
-    #mainContentPage .section .sectionMainContent #mainContentRight2 p a {
-    font-size: 14px;
-    padding: 13px;
-}
-    
-    #mainContentPage #mainSection3 h2 {
-    font-size: 18px;
-}
-    
-    #mainContentPage #mainSection3{
-    
-        height:auto;
-    }
-    
-    #mainContentPage #mainSection3 .banner{
-    
-        height:120px;
+        font-size:22px;
     }
     
     
-    #mainContentPage .section .sectionMainContent #mainContentRight3{
-    
-        margin-bottom:60px;
-    }
-    
-    #mainContentPage .section .sectionMainContent .mainContentRight p {
-    font-size: 21px;
-}
-    
-    #mainContentPage #mainSection3 .banner p{
-        
-        height:0 auto;
-        positon:relative;
-        line-height: normal;
-        font-size:20px;
-        padding-top:0px;
-    }
-    
-    #mainContentPage #mainSection3 .banner p span{
-        
-        font-size:20px;
-    }
-    
-    #mainContentPage #mainSection3 .banner a {
-    font-size: 15px;
-    padding: 13px;
-    margin-right: 4%;
-    line-height: 20px;
-    float: right;
-    text-decoration: none;
-    margin-top: 60px;
-        margin-left:4%;
-        margin-bottom:10px;
-        padding-top:10px;
-        padding-bottom:10px;
-    color: white;
-    background: #bf54bb;
+#section3 .content1{
+    width:50%;
+    left:2%;
+
 }
 
-    #mainContentPage #mainSection3 .sectionMainContent {
-    margin-top: 0px;
-    margin-bottom: 70px;
-}
-    
-    #contactBanner #contactEmail{
-        
-        display:none;
-    }
-    
-    #contactBanner #contactMobile{
-    
-        display:none;
-    }
-    
-    #contactBanner h2{
-    
-        float:none;
-        text-align:center;
-    }
-    #contactBanner h2 a{
-    
-        float:none;
-        text-align:center;
-    }
-    
-    #footer ul li a{
-        font-size:13px;
-    }
-    
-#mainContentPage{
+#section3 .content1 ul{
+
+    float:left;
     width:100%;
+    margin-left:-2%;
+    list-style: none;
+
+}
+#section3 .content1 ul li img{
+
+    width:120%;
     height:auto;
-    min-height:1015px;
-    background: url(miscImages/mainBackgroundMobile1.jpg);
-        background-size: auto 100%;
-    background-repeat: repeat;
-    position:relative;
-    overflow:hidden;
+
 }
-    
-#section1{
-    width:100%;
-    height:260px;
-    background-color:rgba(27, 32, 52,0.7);
-    margin-top:20px;
 }
+
+@media (max-width: 540px){
     
-    #section1 img{
+    #section3 .content1 h1{
+        font-size:30px;
+    }
     
-        margin-top:10px;
+    #section3 .content2 p{
+        
+        font-size:25px;
+        line-height:25px;
         width:100%;
-        height:auto;
+    }
+    #section3 .content2 p span{
+        
+        font-size:18px;
+    }
+    
+    
+#section3 .content1{
+    width:90%;
+    height:450px;
+    background-color:rgba(41, 46, 42,0.8);
+    position:absolute;
+    left:5%;
+    top:230px;
+
+}
+    
+    
+#section3 .content2{
+    width:70%;
+    height:180px;
+    position:absolute;
+    right:0;
+    top:20px;
+    background-color:white;
+    display: flex;
+
+}
+
+#section3 .content1 ul{
+
+    float:left;
+    width:100%;
+    margin-left:-2%;
+    list-style: none;
+
+}
+#section3 .content1 ul li img{
+
+    width:120%;
+    height:auto;
+    
+}
+}
+
+
+/***************** End section3 ********************/
+
+
+
+
+/***************** start section4 ********************/
+
+#section4{
+    
+        height:550px;
+    background-color:blue;
+    width:100%;
+    background: url(section4BackgroundBe.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size:cover;
+    position:relative;
+    display: block;
+
+}
+
+
+#section4 .content1{
+
+    width:60%;
+    height:200px;
+    background-color:yellow;
+    position:absolute;
+    left:0px;
+    top:20px;
+    display:flex;
+}
+
+#section4 .content1 p{
+    
+    width:77%;
+    padding:30px;
+    vertical-align:middle;
+    color:black;
+    font-family: mainFont;
+    font-size:55px;
+    line-height:58px;
+    text-align: left;
+    align-self: center;
+}
+
+#section4 .content1 p span{
+    font-style:italic;
+    font-size:55px;
+    line-height:58px;
+    color:black;
+    text-decoration: underline;
+    padding-right:10px;
+    font-family: mainFont;
+}
+
+#section4 .content2{
+
+    width:50%;
+    height:380px;
+    position:absolute;
+    right:5%;
+    top:130px;
+    background-color:#1c1c1a;
+    display: flex;
+    
+}
+
+
+#section4 .content2 p{
+    
+    padding:30px;
+    vertical-align:middle;
+    color:white;
+    font-size:19px;
+    text-align: left;
+    align-self: center;
+}
+
+#section4 .content2 p span{
+    
+    vertical-align:middle;
+    color:yellow;
+    font-size:23px;
+    text-align: left;
+    align-self: center;
+    font-family:mainFont;
+}
+
+
+@media (max-width: 890px){
+
+    #section4 .content2 p{
+        
+        font-size:16px;
+    }
+    #section4 .content2 p span{
+        
+        font-size:20px;
+    }
+    
+    #section4 .content1 p {
+        font-size:45px;
+        line-height:45px;
+    }
+    #section4 .content1 p span{
+        font-size:45px;
+        line-height:45px;
+    }
+
+    
+
+}
+
+@media (max-width: 540px){
+
+    #section4 .content1{
+        width:85%;
+        height:130px;
+    }
+    
+    #section4 .content2{
+        width: 82%;
+    height: 380px;
+    position: absolute;
+    right: 0%;
+    top: 130px;
+    }
+    
+    
+    #section4 .content2 p{
+        
+        font-size:16px;
+    }
+    #section4 .content2 p span{
+        
+        font-size:20px;
+    }
+    
+    #section4 .content1 p {
+        font-size:28px;
+        line-height:28px;
+        width:100%;
+    }
+    #section4 .content1 p span{
+        font-size:28px;
+        line-height:28px;
+    }
+
+}
+
+@media (max-width: 315px){
+#section4 .content2 p{
+        
+        font-size:12px;
+    }
+    #section4 .content2 p span{
+        
+        font-size:15px;
+    }
+    
+    #section4 .content1 p {
+        font-size:22px;
+        line-height:22px;
+        width:100%;
+    }
+    #section4 .content1 p span{
+        font-size:22px;
+        line-height:22px;
+    } 
+
+}
+
+
+
+/***************** End section4 ********************/
+
+
+
+/***************** start section5 ********************/
+
+#section5{
+    
+    height:700px;
+    background-color:blue;
+    width:100%;
+    background: url(section5Background.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size:cover;
+    display:block;
+    position:relative;
+}
+
+
+
+#section5 .content1{
+
+    width:600px;
+    height:700px;
+    background-color:#1c1c1a;
+    position:absolute;
+    left:20px;
+    top:0px;
+    
+}
+
+#section5 .content1 #sideText{
+    position:relative;
+    left:0px;
+    width:25%;
+    height:100%;
+    top:0px;
+    background-color:;
+    overflow: hidden;
+    float:left;
+
+}
+
+
+
+#section5 .content1 #sideText p{
+    
+      color:white;
+    font-family:mainFont;
+    font-size:40px;
+    position:absolute;
+    width:600px;
+    bottom:-70;
+    left:15%;
+    text-align: left;
+    padding-top:10px;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin:    0 0;
+    -ms-transform-origin:     0 0;
+    -o-transform-origin:      0 0;
+    
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform:    rotate(-90deg); 
+    -ms-transform:     rotate(-90deg); 
+    -o-transform:      rotate(-90deg); 
+
+}
+
+#section5 .content1 p span{
+    font-style:italic;
+    font-size:55px;
+    line-height:58px;
+    color:white;
+    font-family: mainFont;
+}
+
+#section5 .content1 #sideVideos{
+    
+    width:75%;
+    height:650px;
+    float:right;
+    background-color:;
+    position:relative;
+    right:0;
+    top:25px;
+        display: flex;
+justify-content: center; /* align horizontal */
+align-items: center;
+    
+
+}
+
+
+#section5 .content1 #sideVideos ul{
+    
+    list-style:none;
+    width:100%;
+    height:100%;
+    background-color:;
+}
+
+
+#section5 .content1 #sideVideos ul li{
+    
+    float:left;
+    width:100%;
+    height:33.33333333%;
+    background-color:;
+    display:flex;
+    display: flex;
+justify-content: center; /* align horizontal */
+align-items: center;
+}
+
+#section5 .content1 #sideVideos ul li img{
+    
+    margin:0 auto;
+    height:85%;
+    width:auto;
+    text-align:center;
+    vertical-align:middle;
+}
+
+
+#section5 .content2{
+
+    width:45%;
+    height:200px;
+    position:absolute;
+    right:0px;
+    top:50px;
+    background-color:white;
+    display: flex;
+    
+}
+
+
+#section5 .content2 p{
+    
+    width:80%;
+    padding:30px;
+    vertical-align:middle;
+    color:black;
+    font-family: mainFont;
+    font-size:55px;
+    line-height:70px;
+    text-align: left;
+    align-self: center;
+}
+
+#section5 .content2 p span{
+    font-size:55px;
+    line-height:55px;
+    font-style:italic;
+    color:yellow;
+    font-family: mainFont;
+    background-color:#1c1c1c;
+    padding-right:14px;
+    padding-left:3px;
+}
+
+
+#section5 .content3{
+    
+    width:35%;
+    height:auto;
+    position:absolute;
+    right:0px;
+    top:300px;
+    background-color:yellow;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#section5 .content3 p{
+    
+    padding:40px;
+    vertical-align:middle;
+    color:black;
+    font-size:18px;
+    align-self: center;
+    vertical-align: middle;
+
+}
+
+
+@media (max-width: 1200px){
+    
+        #section5 .content2{
+            
+            width:35%;
+        
+        }
+
+    #section5 .content2 p{
+    
+        font-size:40px;
+        line-height:50px;
+        width:100%;
+    } 
+    
+    #section5 .content2 p span{
+    
+        font-size:40px;
+        line-height:50px;
+    }
+    
+    
+    #section5 .content3{
+    
+    width:32%;
+    
+}
+
+#section5 .content3 p{
+
+    font-size:16px;
+
+}
+}
+
+@media (max-width: 980px){
+    
+    #section5 .content1{
+    
+        width:450px;
+    }
+    
+    #section5 .content1 #sideText p{
+    
+        font-size:30px;
+        line-height:30px;
+        bottom:0px;
+    }
+    
+    #section5 .content1 #sideVideos{
+    
+        height:550px;
+        top:85px;
     
     }
-#section2{
-    width:100%;
-    height:260px;
-    background-color:rgba(27, 32, 52,0.7);
-    margin-top:40px;
+    
+    
+        #section5 .content2{
+            
+            width:35%;
+        
+        }
+
+    #section5 .content2 p{
+    
+        font-size:40px;
+        line-height:50px;
+        width:100%;
+    } 
+    
+    #section5 .content2 p span{
+    
+        font-size:40px;
+        line-height:50px;
+    }
+    
+    
+    #section5 .content3{
+    
+    width:30%;
+    
+}
+
+#section5 .content3 p{
+
+    font-size:16px;
 
 }
-#section3{
-    width:100%;
-    height:260px;
-    background-color:rgba(27, 32, 52,0.7);
-        margin-top:40px;
+
+
 }
     
-      #mainContentPage .section .sectionMainContent .mainContentLeft #imgPercentageContainer .center-percent {
-  position: absolute;
+    
+@media (max-width: 730px){
+    
+    #section5 .content1{
+    
+        width:350px;
+        left:0;
+    }
+    
+    #section5 .content1 #sideText p{
+    
+        font-size:25px;
+        width:100%;
+        line-height:25px;
+        top:10px;
+        left:0;
+        -webkit-transform: rotate(0deg); 
+    -moz-transform:    rotate(0deg); 
+    -ms-transform:     rotate(0deg); 
+    -o-transform:      rotate(0deg); 
+        text-align:center;
+    }
+    
+    #section5 .content1 #sideText {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 13%;
+    top: 0px;
+    float: left;
+    background-color:;
+        
+}
+    
+    #section5 .content2{
+        top:40px;
+    }
+    
+    #section5 .content1 #sideVideos {
+    width: 100%;
+    height: 550px;
+    float: left;
+    background-color: ;
+    position: relative;
+    right: 0;
+    top: 123px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+    
+    #section5 .content2 p {
+    font-size: 30px;
+    line-height: 40px;
+    width: 100%;
+}
+    #section5 .content2 p span{
+    font-size: 30px;
+    line-height: 40px;
+}
+    
+    #section5 .content3 {
+    width: 35%;
+    height: auto;
+}
+    
+        #section5 .content3 p{
+        
+        font-size:18px;
+            padding:20px;
+            text-align: center;
+        }
+    
+    
+    }
+
+@media (max-width: 590px){
+
+     #section5 .content1{
+    
+        width:100%;
+        left:0;
+        top:350px;
+    }
+    
+    #section5 .content2{
+        
+        left:0px;
+        height:150px;
+        top:0px;
+        width:100%;
+    }
+    
+        #section5 .content2 p{
+        
+            font-size:33px;
+            line-height:45px;
+            text-align: center;
+        }
+    
+        #section5 .content2 p span{
+        
+            font-size:33px;
+            line-height:45px;
+        }
+    
+     #section5 .content3{
+        
+        right:0px;
+        height:200px;
+        top:150px;
+        width:100%;
+    }
+    
+    #section5{
+        
+        height:1050px;
+    }
+    
+    #section5 .content1 #sideText p{
+        
+        padding:15px;
+    }
+    #section5 .content1 #sideText{
+        
+        overflow:visible;
+    }
+    
+    
+    
+}
+/***************** End section5 ********************/
+
+
+
+/***************** start section6 ********************/
+
+#section6{
+    
+        height:700px;
+    background-color:;
+    width:100%;
+    background: url(section6Background.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size:cover;
+    display:block;
+    position:relative;
+
+}
+
+#section6 i{
+ 
+    color:yellow;
+    position:absolute;
+    top:10px;
+    left:-38px;
+    z-index: 20;
+}
+    
+
+#section6 .content1{
+
+    width:55%;
+    height:250px;
+    background-color:#1c1c1c;
+    position:absolute;
+    left:0px;
+    top:200px;
+    display:flex;
+    z-index:10;
+}
+
+#section6 .content1 p{
+    
+    width:80%;
+    padding:30px;
+    vertical-align:middle;
+    color:yellow;
+    font-family: mainFont;
+    font-size:55px;
+    line-height:58px;
+    text-align: left;
+    align-self: center;
+}
+
+#section6 .content1 p span{
+    font-size:55px;
+    line-height:58px;
     color:white;
-    font-size:32px;
-    font-family:mainFontBold;
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -55%);
+    font-family: mainFont;
 }
+
+#section6 .content2{
+
+    width:50%;
+    height:600px;
+    position:absolute;
+    right:5%;
+    top:50px;
+    background-color:white;
+    z-index: 1;
+    
+}
+
+
+#section6 .content2 p{
+    
+    padding:30px;
+    padding-left:0px;
+    padding-right:0px;
+    vertical-align:middle;
+    color:black;
+    font-size:20px;
+    text-align: left;
+    align-self: center;
+    width:80%;
+    margin-left:10%;
+}
+
+#section6 .content2 p span{
+    
+    vertical-align:middle;
+    color:yellow;
+    font-size:23px;
+    text-align: left;
+    align-self: center;
+    font-family:mainFont;
+}
+
+form{
+
+    width:70%;
+    margin-left:25%;
+}
+
+
+@media (max-width: 1030px){
+
+    #section6 .content1{
+        
+        width:45%;
+    }
+    
+    #section6 .content1 p{
+    
+        font-size:40px;
+        line-height:40px;
+        padding: 20px;
+        width:90%;
+    
+    }
+    
+    #section6 .content2 {
+        width: 60%;
+    
+    
+    }
+    #section6 .content2 p{
+        
+        font-size:16px;
+    }
+    #section6 .content2 p span{
+        
+        font-size:20px;
+    }
+    
+    #section6 .content1 p {
+        font-size:45px;
+        line-height:45px;
+    }
+    #section6 .content1 p span{
+        font-size:45px;
+        line-height:45px;
+    }
+
     
 
 }
 
+@media (max-width: 650px){
+
+    #section6 .content1{
+        width:100%;
+        height:130px;
+        top:0px;
+    }
+    
+    
+    
+    #section6 .content2{
+        width: 100%;
+    height: 570px;
+    position: absolute;
+    right: 0%;
+    top: 130px;
+    }
+    
+    
+    #section6 .content2 p{
+        
+        font-size:16px;
+    }
+    #section6 .content2 p span{
+        
+        font-size:20px;
+    }
+    
+    #section6 .content1 p {
+        font-size:28px;
+        line-height:28px;
+        width:100%;
+        text-align:center;
+    }
+    #section6 .content1 p span{
+        font-size:28px;
+        line-height:28px;
+    }
+    
+    form{
+
+    width:85%;
+    margin-left:7.5%;
+}
+
+}
+
+@media (max-width: 315px){
+#section4 .content2 p{
+        
+        font-size:12px;
+    }
+    #section6 .content2 p span{
+        
+        font-size:15px;
+    }
+    
+    #section6 .content1 p {
+        font-size:22px;
+        line-height:22px;
+        width:100%;
+    }
+    #section6 .content1 p span{
+        font-size:22px;
+        line-height:22px;
+    } 
+
+}
+
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 25px 0;
+  display: inline-block;
+  border:0px none;
+  border-bottom: 5px solid yellow;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #1c1c1c;
+  color: yellow;
+  padding: 14px 20px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+    margin-left:50%;
+    font-family: mainFont;
+}
+
+input[type=submit]:hover {
+  background-color: yellow;
+    color:#1c1c1c;
+    font-family: mainFont;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: black;
+    text-transform: uppercase;
+    font-family: mainFont;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}
+
+
+
+/***************** End section6 ********************/
+
+
+
+
+/***************** start footer ********************/
+
+footer{
+    
+    height:150px;
+    background-color:#1c1c1c;
+    width:100%;
+    position:relative;
+
+}
+
+footer p{
+    
+    color:white;
+    font-weight:200;
+    text-transform: uppercase;
+    margin-top:40px;
+    padding:20px;
+    font-size:16px;
+    
+}
+
+footer p a{
+    
+    color:white;
+    font-weight:400;
+    color:yellow;
+    font-size:16px;
+}
+footer #leftFoot{
+    
+    float:left;
+    position: absolute;
+  top: 50%;
+  left: 0%;
+  /* bring your own prefixes */
+  transform: translate(0%, -50%);
+    text-align: left;
+    margin-top:0px;
+}
+
+
+footer #middleFoot{
+    
+    margin-top:0px;
+    float:center;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+    text-align: center;
+    width:350px;
+}
+
+footer #rightFoot{
+
+    float:right;
+        position: absolute;
+  top: 50%;
+  right: 0%;
+  /* bring your own prefixes */
+  transform: translate(0%, -50%);
+    text-align: right;
+    margin-top:0px;
+}
+
+@media (max-width: 1100px){
+
+    footer p{
+        
+        font-size:12px;
+    }
+    
+    footer p a{
+        font-size:12px;
+    }
+    
+    footer #middleFoot{
+        
+        width:290px;
+    }
+
+}
+@media (max-width: 990px){
+
+    footer #middleFoot{
+        left:55%;
+    }
+
+}
+@media (max-width: 740px){
+
+    footer {
+        
+        height:200px;
+    }
+    
+    
+ footer #middleFoot{
+        left:50%;
+        position: absolute;
+        top:70%;
+     width:100%;
+     transform: translate(-50%, -50%);
+     text-align:center;
+    }
+    
+    footer #rightFoot{
+        
+        text-align:right;
+        top:2%;
+        left:2%;
+        transform: translate(0%, -0%);
+    }
+    footer #leftFoot{
+        
+        text-align:left;
+        top:2%;
+        left:2%;
+        transform: translate(0%, -0%);
+    }
+}
+
+@media (max-width: 440px){
+
+    footer #leftFoot{
+        
+        font-size:11px;
+        width:200px;
+    }
+    
+     footer p a{
+        
+        font-size:11px;
+        width:200px;
+    }
+}
+}
+
+
+
+/***************** End footer ********************/
