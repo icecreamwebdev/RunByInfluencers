@@ -230,6 +230,8 @@ video{
     width:49%;
     height:100%;
     margin-left:0px;
+    display:flex;
+    justify-content:center;
 }
 
 #section1 .block .division1 p{
@@ -241,10 +243,14 @@ video{
     letter-spacing: 6px;
     height:100%;
     font-size:47px;
-    padding:10px;
-    text-align: center;
     background-color:#1c1c1a;
     float:left;
+    padding:0px;
+    display:flex;
+    text-align: center;
+        align-items: center;
+    justify-content:center;
+    vertical-align: middle;
           -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: yellow;
 }
@@ -267,6 +273,8 @@ video{
     width:49%;
     height:100%;
     margin-right:0px;
+    display:flex;
+    justify-content:center;
 }
 
 
@@ -278,12 +286,17 @@ video{
     letter-spacing: 6px;
     height:100%;
     font-size:47px;
-    padding:10px;
     text-align: center;
     background-color:#1c1c1a;
-    float:left;
+    display:flex;
+        align-items: center;
+    justify-content:center;
+    vertical-align: middle;
           -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: yellow;
+    text-align: -webkit-center;
+    margin: 0 auto;
+
 }
 
 
