@@ -1757,6 +1757,7 @@ footer #rightFoot{
     margin-top:0px;
 }
 
+
 @media (max-width: 1100px){
 
     footer p{
@@ -1827,6 +1828,10 @@ footer #rightFoot{
         font-size:11px;
         width:200px;
     }
+    
+    footer #rightFoot{
+        top:6%;
+        }
 }
 
 
