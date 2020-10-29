@@ -191,9 +191,9 @@ video{
     }
     
     header #headerLogo img{
-    height:45%;
-    width:auto;
-    top:27.5%;
+    height: 55%;
+    width: auto;
+    top: 20.5%;
 }
 }
 
@@ -764,7 +764,7 @@ vertical-align:middle;
 @media (max-width: 540px){
     
     #section3 .content1 h1{
-        font-size:30px;
+        font-size: 25px;
     }
     
     #section3 .content2 p{
