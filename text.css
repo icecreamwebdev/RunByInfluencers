@@ -663,7 +663,7 @@ video{
     display:block;
     margin:auto;
     margin:0 auto;
-        width:110%;
+        width:100%;
     height:auto;
     text-align:center;
 vertical-align:middle;
@@ -755,7 +755,7 @@ vertical-align:middle;
 }
 #section3 .content1 ul li img{
 
-    width:110%;
+    width:100%;
     height:auto;
 
 }
@@ -811,7 +811,7 @@ vertical-align:middle;
 }
 #section3 .content1 ul li img{
 
-    width:110%;
+    width:100%;
     height:auto;
     
 }
