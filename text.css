@@ -1561,6 +1561,11 @@ form{
         top:0px;
     }
     
+    #section6 i{
+ 
+    display:none;
+}
+    
     
     
     #section6 .content2{
@@ -1665,6 +1670,12 @@ input[type=submit]:hover {
 
 ::placeholder {
   color: black;
+}
+
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
 
 
@@ -1812,7 +1823,7 @@ footer #rightFoot{
         width:200px;
     }
 }
-}
+
 
 
 
