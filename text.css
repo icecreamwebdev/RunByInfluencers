@@ -798,14 +798,13 @@ vertical-align:middle;
     }
     
     
-#section3 .content1{
-    width:90%;
-    height:450px;
-    background-color:rgba(41, 46, 42,0.8);
-    position:absolute;
-    left:5%;
-    top:230px;
-
+#section3 .content1 {
+    width: 80%;
+    height: 450px;
+    background-color: rgba(41, 46, 42,0.8);
+    position: absolute;
+    left: 10%;
+    top: 230px;
 }
     
     
@@ -1170,11 +1169,10 @@ align-items: center;
     font-size:55px;
     line-height:55px;
     font-style:italic;
-    color:yellow;
     font-family: mainFont;
-    background-color:#1c1c1c;
     padding-right:10px;
     padding-left:3px;
+    text-decoration:underline;
 }
 
 
