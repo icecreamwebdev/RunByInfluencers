@@ -1694,7 +1694,6 @@ appearance: none;
 }
     
     #section6 .content2 p{
-        
         color:white;
     }
     
@@ -1735,6 +1734,11 @@ background-color:#1c1c1c;
     width: 80%;
     margin-left: 10%;
 }
+    
+    #section6 .content2{
+        
+        border-bottom:5px solid white;
+    }
     
 
 }
