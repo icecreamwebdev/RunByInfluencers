@@ -10,7 +10,7 @@
         <script src="https://kit.fontawesome.com/480047a3c1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="text.css" />
         
-        
+       <script src="javascript_form/gen_validatorv4.js" type="text/javascript"></script> 
     </head>
     
     
@@ -19,7 +19,7 @@
         <div id="homeWrap">
             <header>
                 
-                <div id="headerLogo"><a href="#"><img src="tempLogo.png" id="headerLogo"></a></div>
+                <div id="headerLogo"><a href="#"><img src="newlogo.jpg" id="headerLogo"></a></div>
                 <div id="headerSocials">
                     
                     <ul>
@@ -181,18 +181,29 @@ We know what drives clicks, we we work closely with our talent & you to ensure y
                 <p><br /> 
 We're here to make your life as a brand, fellow agency or influencer simpler. Get in touch and see how we can help.
                     <br /><br />
-<form action="/action_page.php">
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<form method="post" name="contactform"
+action="contact-form-handler.php">
+    <input type="text" id="name" name="name" placeholder="Your name..">
 
-    <input type="text" id="lname" name="email" placeholder="Your Email..">
+    <input type="text" id="email" name="email" placeholder="Your Email..">
     
     
-    <input type="text" id="lname" name="lastname" placeholder="Message...">
+    <input type="text" id="message" name="message" placeholder="Message...">
 
     </select>
   
     <input type="submit" value="SEND">
   </form>
+            
+           <script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
             
             </div>
         </div>
