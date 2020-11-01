@@ -1,4 +1,4 @@
-<?php include 'sendemail.php'; ?>
+//<?php include 'sendemail.php'; ?>
 
 <html>
     <head>
@@ -98,9 +98,9 @@
         
         <div id="section2">
         
-            <div class="content1"><p>INFLUENCER & CELEBRITY MANAGEMENT HANDLED BY THOSE WHO<br /><span> GET IT</span></p></div>
+            <div class="content1 revealRight"><p>INFLUENCER & CELEBRITY MANAGEMENT HANDLED BY THOSE WHO<br /><span> GET IT</span></p></div>
             
-            <div class="content2">
+            <div class="content2 revealLeft">
                 <p>Every agency says the same right?...<br /><br />
 But is every agency run by actual current successful influencers and marketing professionals?<br /><br />
 At Run By Influencers our team has over 8 years experience in their craft and through their own struggles in the industry have created an agency that truly puts the creator and brand first.</p>
@@ -110,7 +110,7 @@ At Run By Influencers our team has over 8 years experience in their craft and th
         
         <div id="section3">
             
-            <div class="content1">
+            <div class="content1 revealOpacity">
                 <h1>We're trusted by...</h1>
                 <ul>
                     <li><img src="brand1e.png"></li>
@@ -127,7 +127,7 @@ At Run By Influencers our team has over 8 years experience in their craft and th
             
             </div>
             
-            <div class="content2">
+            <div class="content2 revealLeft">
                 <p>“CONTENT IS FIRE; SOCIAL MEDIA IS
                     GASOLINE.” <br />- <span>JAY BAER</span></p>
             </div>
@@ -138,7 +138,7 @@ At Run By Influencers our team has over 8 years experience in their craft and th
         <div class="content1"><p>OUR <span>PLAN </span>   FOR BRANDS</p></div>
             
             <div class="content2">
-                <p><span>WE SOURCE</span><br /> 
+                <p class="revealOpacity"><span>WE SOURCE</span><br /> 
 Whether that's from our
 200+ roster or from our external
 headhunting service, we'll find the perfect match
@@ -164,17 +164,15 @@ We know what drives clicks, we we work closely with our talent & you to ensure y
                 </div>
             
             </div>
-            <div class="content2"><p>YOU <span>CAN</span> SIT WITH US.</p></div>
+            <div class="content2 revealLeft"><p>YOU <span>CAN</span> SIT WITH US.</p></div>
             
-            <div class="content3">
+            <div class="content3 revealLeft">
                 <p>Whether you're an influencer, celeb, baker, cook, dog walker, hairdresser, beauty guru, fitness freak or just damn amazing - if you're creating engaging content, we'd love to work with you.</p>
             </div>
         
         </div>
         <div id="section6">
             
-            
-
 
             <div class="content1"><p>HELLO, CAN WE <span>HELP </span>   YOU?</p></div>
             
@@ -183,35 +181,27 @@ We know what drives clicks, we we work closely with our talent & you to ensure y
                 <p><br /> 
 We're here to make your life as a brand, fellow agency or influencer simpler. Get in touch and see how we can help.
                     <br /><br />
-                <div class="alert">
-                    
-
- <h2>Message sent! <br />Thanks for contacting us!</h2>
-                    <i class="fas fa-check-circle fa-3x"></i>
-                </div>
-<form method="post" name="contactform"
-action="contact-form-handler.php">
+                 <!--alert messages start-->
+    <?php echo $alert; ?>
+    <!--alert messages end-->
+<form method="post" name="contactform" action="#myform" id="myform">
     <input type="text" id="name" name="name" placeholder="Your name..">
 
-    <input type="text" id="email" name="email" placeholder="Your Email..">
+    <input type="email" id="email" name="email" placeholder="Your Email.."required>
     
     
-    <input type="text" id="message" name="message" placeholder="Message...">
+    <input type="text" id="message" name="message" placeholder="Message..." required>
 
-    </select>
   
-    <input type="submit" value="SEND">
+    <input type="submit" name="submit" value="SEND">
   </form>
+             <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
             
-           <script language="JavaScript">
-// Code for validating the form
-// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-// for details
-var frmvalidator  = new Validator("contactform");
-frmvalidator.addValidation("name","req","Please provide your name"); 
-frmvalidator.addValidation("email","req","Please provide your email"); 
-frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-</script>
+        
             
             </div>
         </div>
@@ -225,10 +215,82 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
         
         </footer>
         
+        
+        
         <script> function scrollWin(){
             var x = document.body.scrollHeight;
             var y = x-900;
             window.scrollTo({ top: y, behavior: 'smooth' })}</script>
         
+             <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.revealRight');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+        
+         <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.revealLeft');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+        
+         <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.revealOpacity');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+            
+            
     </body>
+        
+        
+
 </html>

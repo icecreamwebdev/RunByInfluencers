@@ -1569,6 +1569,15 @@ align-items: center;
   border-bottom: 5px solid yellow;
   box-sizing: border-box;
 }
+#section6 input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 25px 0;
+  display: inline-block;
+  border:0px none;
+  border-bottom: 5px solid yellow;
+  box-sizing: border-box;
+}
 
 #section6 input[type=submit] {
   width: 50%;
@@ -1670,7 +1679,7 @@ appearance: none;
         color:#f2ee07;
     }
     
-    #section6 i{
+    #section6 .fa-paperclip{
  
     display:none;
 }
@@ -1707,10 +1716,26 @@ appearance: none;
     }
     
     form{
-
     width:85%;
     margin-left:7.5%;
 }
+    
+    #section6 .alert{
+    width:85%;
+    height:70%;
+    position:absolute;
+    margin-left:7.5%;
+    background-color:#1c1c1c;
+    z-index:1000;
+
+}
+
+
+#section6 .alert h2{
+    color:white;
+    
+}
+
     
      
     #section6 .content2 {
@@ -1719,7 +1744,12 @@ appearance: none;
     
     #section6 .content2 p{
         color:white;
+        text-align: center;
     }
+    
+    #section6 input, select, textarea{
+    color: white;
+}
     
 
 
@@ -1941,4 +1971,59 @@ footer #rightFoot{
     
     
 }
+
+
+
+
+
+.revealRight{
+  position: relative;
+  transform: translateX(-350px);
+  opacity: 0.9;
+  transition: all 1s ease;
+}
+
+.revealRight.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+.revealLeft{
+  position: relative;
+  transform: translateX(200px);
+  opacity: 0.7;
+  transition: all 0.7s ease;
+}
+
+.revealLeft.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.revealOpacity{
+  opacity: 0;
+  transition: all 3s ease;
+}
+
+.revealOpacity.active{
+  opacity: 1;
+}
+
+.revealUnderline:after{
+content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+}
+
+.revealUnderline:after.active{
+
+    width: 100%;
+	background: blue;
+}
+
 /***************** End footer ********************/

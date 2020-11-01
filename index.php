@@ -98,9 +98,9 @@
         
         <div id="section2">
         
-            <div class="content1"><p>INFLUENCER & CELEBRITY MANAGEMENT HANDLED BY THOSE WHO<br /><span> GET IT</span></p></div>
+            <div class="content1 revealRight"><p>INFLUENCER & CELEBRITY MANAGEMENT HANDLED BY THOSE WHO<br /><span> GET IT</span></p></div>
             
-            <div class="content2">
+            <div class="content2 revealLeft">
                 <p>Every agency says the same right?...<br /><br />
 But is every agency run by actual current successful influencers and marketing professionals?<br /><br />
 At Run By Influencers our team has over 8 years experience in their craft and through their own struggles in the industry have created an agency that truly puts the creator and brand first.</p>
@@ -110,7 +110,7 @@ At Run By Influencers our team has over 8 years experience in their craft and th
         
         <div id="section3">
             
-            <div class="content1">
+            <div class="content1 revealOpacity">
                 <h1>We're trusted by...</h1>
                 <ul>
                     <li><img src="brand1e.png"></li>
@@ -127,7 +127,7 @@ At Run By Influencers our team has over 8 years experience in their craft and th
             
             </div>
             
-            <div class="content2">
+            <div class="content2 revealLeft">
                 <p>“CONTENT IS FIRE; SOCIAL MEDIA IS
                     GASOLINE.” <br />- <span>JAY BAER</span></p>
             </div>
@@ -138,7 +138,7 @@ At Run By Influencers our team has over 8 years experience in their craft and th
         <div class="content1"><p>OUR <span>PLAN </span>   FOR BRANDS</p></div>
             
             <div class="content2">
-                <p><span>WE SOURCE</span><br /> 
+                <p class="revealOpacity"><span>WE SOURCE</span><br /> 
 Whether that's from our
 200+ roster or from our external
 headhunting service, we'll find the perfect match
@@ -164,9 +164,9 @@ We know what drives clicks, we we work closely with our talent & you to ensure y
                 </div>
             
             </div>
-            <div class="content2"><p>YOU <span>CAN</span> SIT WITH US.</p></div>
+            <div class="content2 revealLeft"><p>YOU <span>CAN</span> SIT WITH US.</p></div>
             
-            <div class="content3">
+            <div class="content3 revealLeft">
                 <p>Whether you're an influencer, celeb, baker, cook, dog walker, hairdresser, beauty guru, fitness freak or just damn amazing - if you're creating engaging content, we'd love to work with you.</p>
             </div>
         
@@ -222,5 +222,75 @@ We're here to make your life as a brand, fellow agency or influencer simpler. Ge
             var y = x-900;
             window.scrollTo({ top: y, behavior: 'smooth' })}</script>
         
+             <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.revealRight');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+        
+         <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.revealLeft');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+        
+         <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.revealOpacity');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+            
+            
     </body>
+        
+        
+
 </html>
