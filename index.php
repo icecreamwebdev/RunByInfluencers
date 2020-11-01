@@ -173,8 +173,6 @@ We know what drives clicks, we we work closely with our talent & you to ensure y
         </div>
         <div id="section6">
             
-            
-
 
             <div class="content1"><p>HELLO, CAN WE <span>HELP </span>   YOU?</p></div>
             
@@ -183,35 +181,27 @@ We know what drives clicks, we we work closely with our talent & you to ensure y
                 <p><br /> 
 We're here to make your life as a brand, fellow agency or influencer simpler. Get in touch and see how we can help.
                     <br /><br />
-                <div class="alert">
-                    
-
- <h2>Message sent! <br />Thanks for contacting us!</h2>
-                    <i class="fas fa-check-circle fa-3x"></i>
-                </div>
-<form method="post" name="contactform"
-action="contact-form-handler.php">
+                 <!--alert messages start-->
+    <?php echo $alert; ?>
+    <!--alert messages end-->
+<form method="post" name="contactform" action="#myform" id="myform">
     <input type="text" id="name" name="name" placeholder="Your name..">
 
-    <input type="text" id="email" name="email" placeholder="Your Email..">
+    <input type="email" id="email" name="email" placeholder="Your Email.."required>
     
     
-    <input type="text" id="message" name="message" placeholder="Message...">
+    <input type="text" id="message" name="message" placeholder="Message..." required>
 
-    </select>
   
-    <input type="submit" value="SEND">
+    <input type="submit" name="submit" value="SEND">
   </form>
+             <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
             
-           <script language="JavaScript">
-// Code for validating the form
-// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-// for details
-var frmvalidator  = new Validator("contactform");
-frmvalidator.addValidation("name","req","Please provide your name"); 
-frmvalidator.addValidation("email","req","Please provide your email"); 
-frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-</script>
+        
             
             </div>
         </div>
@@ -224,6 +214,8 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
         
         
         </footer>
+        
+        
         
         <script> function scrollWin(){
             var x = document.body.scrollHeight;
