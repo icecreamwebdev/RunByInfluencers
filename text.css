@@ -16,7 +16,9 @@
 
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
+
 
 @font-face {
     font-family: mainFont;
@@ -52,6 +54,19 @@ html, body {
     height:99.3%;
 }
 
+.anchor{
+  display: block;
+  height: 100px; /*same height as header*/
+  margin-top: -100px; /*same height as header*/
+  visibility: hidden;
+}
+.anchor1{
+  display: block;
+  height: 60px; /*same height as header*/
+  margin-top: -60px; /*same height as header*/
+  visibility: hidden;
+}
+
 
 /************ header section ********/
 
@@ -69,16 +84,16 @@ header{
 }
 
 header #headerLogo{
-    margin-left:10px;
+    margin-left:13px;
     height:100%;
     position:relative;
     float:left;
 }
 
 header #headerLogo img{
-    height:58%;
+    height:40%;
     width:auto;
-    top:23%;
+    top:33%;
 }
 
 
@@ -239,7 +254,7 @@ video{
 
     width:100%;
     height:120px;
-    background-color:#fda700;
+    background-color:black;
 }
 
 .bannerHeading p{
@@ -256,7 +271,7 @@ video{
     margin:0 auto;
     text-align:center;
     line-height:120px;
-    color:black;
+    color:#fda700;
 }
 
 
@@ -1974,7 +1989,6 @@ align-items: center;
 #section6 ::-webkit-input-placeholder { /* Edge */
   color: black;
     text-transform: uppercase;
-    font-family: mainFont;
 }
 
 #section6 :-ms-input-placeholder { /* Internet Explorer 10-11 */
