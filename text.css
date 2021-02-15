@@ -239,24 +239,8 @@ font-size:55px;
 
 @media (max-width: 580px){
 
-video{
-    display:none;
-}
-    
-#homeImage #safetyBackground{
-        display:block;
-    }
-    
-    #homeText h2{
-        
-        font-size:50px;
-        line-height:55px;
-    }
-    #homeText h3{
-        
-        font-size: 38px;
-    line-height: 39px;
-    }
+
+   
     
   
 }
