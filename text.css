@@ -392,8 +392,18 @@ font-size:55px;
     font-size: 15px;
 
 }
-
     
+#section1 ul a li img {
+    height: 60px;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+    #section1 ul a li h3{
+    
+        font-size:12px;
+    }
 }
     
     
