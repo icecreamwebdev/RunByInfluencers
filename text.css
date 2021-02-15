@@ -2278,10 +2278,8 @@ footer #leftFoot{
     
     float:left;
     position: absolute;
-  top: 50%;
+  top: 20px;
   left: 0%;
-  /* bring your own prefixes */
-  transform: translate(0%, -50%);
     text-align: left;
     margin-top:0px;
 }
@@ -2292,7 +2290,7 @@ footer #middleFoot{
     margin-top:0px;
     float:center;
     position: absolute;
-  top: 20px;
+  top: 15px;
   /* bring your own prefixes */
     text-align: center;
     width:350px;
@@ -2302,7 +2300,7 @@ footer #rightFoot{
 
     float: right;
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 0%;
     text-align: right;
     margin-top: 0px;
