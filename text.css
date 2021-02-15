@@ -103,8 +103,17 @@ header #headerSocials{
     margin-right:25px;
 }
 
+#headerSocials i{
+    
+    display:none;
+    color:black;
+}
+
+
+
 header #headerSocials ul{
     list-style: none;
+    display:block;
     
 
 }
@@ -248,6 +257,21 @@ font-size:55px;
     
     font-size:40px;
     line-height:40px;
+
+}
+    
+    #headerSocials i{
+    
+    display:block;
+    color:black;
+}
+
+
+
+header #headerSocials ul{
+    list-style: none;
+    display:none;
+    
 
 }
    
