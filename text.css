@@ -2292,24 +2292,20 @@ footer #middleFoot{
     margin-top:0px;
     float:center;
     position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 20px;
   /* bring your own prefixes */
-  transform: translate(-50%, -50%);
     text-align: center;
     width:350px;
 }
 
 footer #rightFoot{
 
-    float:right;
-        position: absolute;
-  top: 50%;
-  right: 0%;
-  /* bring your own prefixes */
-  transform: translate(0%, -50%);
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 0%;
     text-align: right;
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 
