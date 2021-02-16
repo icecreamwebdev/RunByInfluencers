@@ -1808,6 +1808,21 @@ justify-content: center; /* align horizontal */
 align-items: center;
 }
 
+#section5 .content1 #sideVideos ul::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+#section5 .content1 #sideVideos ul::-webkit-scrollbar-track {
+  background: #3b3b3b; 
+    border-radius:10px;/* color of the tracking area */
+}
+
+#section5 .content1 #sideVideos ul::-webkit-scrollbar-thumb {
+  background-color: white;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid white;  /* creates padding around scroll thumb */
+}
+
 
 #section5 .content1 #sideVideos ul{
     
