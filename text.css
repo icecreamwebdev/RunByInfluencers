@@ -80,6 +80,7 @@ header{
     position:fixed;
     top:0px;
     left:0px;
+    z-index: 100000;
 }
 
 header #headerLogo{
@@ -151,7 +152,6 @@ header #headerSocials ul #middle{
     overflow: hidden;
     position: relative;
     top:12%;
-    z-index: -1;
 }
 
 video{
