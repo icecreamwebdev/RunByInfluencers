@@ -80,7 +80,6 @@ header{
     position:fixed;
     top:0px;
     left:0px;
-    z-index: 100000;
 }
 
 header #headerLogo{
@@ -152,6 +151,7 @@ header #headerSocials ul #middle{
     overflow: hidden;
     position: relative;
     top:12%;
+    z-index: -1;
 }
 
 video{
@@ -1809,7 +1809,7 @@ align-items: center;
 }
 
 #section5 .content1 #sideVideos ul::-webkit-scrollbar {
-  width: 8px;               /* width of the entire scrollbar */
+  width: 6px;               /* width of the entire scrollbar */
 }
 
 #section5 .content1 #sideVideos ul::-webkit-scrollbar-track {
