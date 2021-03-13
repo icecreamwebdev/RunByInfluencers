@@ -367,10 +367,18 @@ font-size:55px;
 
 @media (max-width: 480px){
 
+#load #preloadImg{
+    
+    height:80px;
+    width:auto;
+    margin-left:-125px;
+    margin-top:-40px;
+
+}
 #homeText h2 {
     
-    font-size:35px;
-    line-height:35px;
+        font-size: 32.5px;
+    line-height: 28px;
 }
 #homeText h3 {
     
