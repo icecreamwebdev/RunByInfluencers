@@ -73,7 +73,7 @@ html, body {
     top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: pulse 3s infinite;
+    animation: pulse 2.5s infinite;
     animation-direction: alternate;
   -webkit-animation-name: pulse;
   animation-name: pulse;
@@ -2795,7 +2795,7 @@ footer #copyright:
 
     footer{
     
-        height:520px;
+        height:580px;
     
     }
     
