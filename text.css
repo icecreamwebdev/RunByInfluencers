@@ -2542,13 +2542,12 @@ align-items: center;
 }
 
 #section6 .alert{
-    width:70%;
-    height:70%;
-    position:absolute;
-    margin-left:25%;
-    background-color:white;
-    z-index:1000;
-
+    width: 88%;
+    height: 80%;
+    position: absolute;
+    margin-left: 5%;
+    background-color: black;
+    z-index: 1000;
 }
 
 #section6 .alert i{
@@ -2563,6 +2562,7 @@ align-items: center;
     font-size:24px;
     margin-top:80px;
     width:90%;
+    color:white;
     margin-left:10%;
     float:right;
     
