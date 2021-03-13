@@ -511,6 +511,8 @@ font-size:55px;
     
     #menuToggle{
         display:block;
+        top: 30px;
+        right:23px;
     }
 #load #preloadImg{
     
@@ -538,6 +540,17 @@ font-size:55px;
     color:black;
 }
 
+    
+    header{
+    
+        height:80px;
+    }
+    
+    header #headerLogo img {
+    height: 32px;
+    width: auto;
+    top: 25px;
+}
 
 
 header #headerSocials ul{
