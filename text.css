@@ -2402,6 +2402,7 @@ align-items: center;
   display: inline-block;
   border:0px none;
   box-sizing: border-box;
+    border-radius: 0px;
 }
 #section6 input[type=email], select {
   width: 100%;
@@ -2410,6 +2411,7 @@ align-items: center;
   display: inline-block;
   border:0px none;
   box-sizing: border-box;
+    border-radius: 0px;
 }
 
 #section6 textarea{
@@ -2421,6 +2423,7 @@ align-items: center;
   border:0px none;
   box-sizing: border-box;
     height:120px;
+    border-radius: 0px;
 
 }
 
