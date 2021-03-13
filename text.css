@@ -2845,6 +2845,13 @@ footer #footerRight ul li{
 }
 
 
+footer #footerRight ul li a{
+    
+    color:orange;
+}
+
+
+
 footer #leftFoot{
     
     float:left;
