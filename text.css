@@ -276,7 +276,7 @@ header #headerSocials ul #middle{
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: orange;
 }
 
 
@@ -381,7 +381,23 @@ position: absolute;
 #menu li
 {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 20px;
+}
+
+#menu li:active{
+    
+    color:orange;
+}
+
+#menu li a:hover{
+    
+    color:orange;
+}
+
+#menu li a:active{
+
+    
+    color:orange;
 }
 
 /*
