@@ -257,10 +257,9 @@ header #headerSocials ul #middle{
 #menuToggle
 {
   display: none;
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 4%;
   right: 20px;
-  
   z-index: 10001;
   
   -webkit-user-select: none;
