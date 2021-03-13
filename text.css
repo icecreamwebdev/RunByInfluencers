@@ -20,6 +20,7 @@ html, body {
 }
 
 
+
 @font-face {
     font-family: mainFont;
     src: url("fonts/LibreFranklin-Black.ttf") format("TrueType");
@@ -47,6 +48,114 @@ html, body {
 *{
     font-family: LemonLight;
 }
+
+/********** loading screen **((((***/
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:10000000;
+    background-color:white;
+}
+
+#load #headerLogo{
+    margin-left:13px;
+    height:12%;
+    position:relative;
+    float:left;
+}
+
+#load #preloadImg{
+
+    height:120px;
+    width:auto;
+    position: fixed;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 3s infinite;
+    animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+    margin-left:-180px;
+    margin-top:-60px;
+
+}
+
+#load  #headerLogo img{
+    height:40%;
+    width:auto;
+    top:33%;
+    
+}
+
+
+
+#load #homeText{
+
+    margin-top:2.8%;
+ 
+   
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.15);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+    
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#load #homeText h3{
+    color:black;
+}
+
+#load #homeText h3{
+    color:orange;
+    font-size:58px;
+    line-height:58px;
+    text-align: left;
+    font-family: lemonmedium;
+  /**  -moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);**/
+      -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: orange;
+    background-color:;
+    padding:4px;
+    padding-left:0px;
+    padding-bottom:0px;
+    padding-right:0px;
+}
+
+#load #homeText h3 span{
+font-size:55px;
+    color:orange;
+-webkit-text-stroke-width: 2px;
+    padding-bottom:5px;
+  -webkit-text-stroke-color: orange;
+
+}
+
+/********** end loading screen *********/
 
 #homeWrap{
     
@@ -182,34 +291,39 @@ min-width: 100%;
 #homeText{
     
     position: absolute;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -40%);
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -40%);
     color:transparent;
     z-index:100;
     padding-left:20px;
-        border-left:5px solid #ffb730;
+    border-left:5px solid #ffb730;
     paddin-top:5px;
     padding-bottom:3px;
+
+    
 }
+
+    
+
 
 #homeText h2{
     color:black;
-    font-size:50px;
+    font-size:47px;
     line-height:50px;
-    text-align:center;
+    text-align:left;
     font-weight:800;
     font-family: lemonmedium;
     padding-top:0px;
-    margin-left:-12px;
+    margin-left:-3px;
 }
 
 #homeText h3{
     color:white;
     font-size:58px;
     line-height:58px;
-    text-align: center;
+    text-align: left;
     font-family: lemonmedium;
   /**  -moz-transform: scale(-1, 1);
 -webkit-transform: scale(-1, 1);
@@ -218,19 +332,18 @@ min-width: 100%;
 transform: scale(-1, 1);**/
       -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
-
     background-color:;
     padding:4px;
     padding-left:0px;
     padding-bottom:0px;
     padding-right:0px;
-    margin-left:-2px;
 }
 
 #homeText h3 span{
 font-size:55px;
     color:white;
-          -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-width: 2px;
+    padding-bottom:5px;
   -webkit-text-stroke-color: white;
 
 }
@@ -242,8 +355,14 @@ font-size:55px;
     bottom:20px;
     z-index:100;
     color:#fda700;
+    animation: arrow 1.5s linear infinite;
 }
 
+@keyframes arrow {
+  0%   {bottom:10px;}
+  50%  { bottom:30px;}
+  100% {bottom:10px;}
+}
 
 
 @media (max-width: 480px){
@@ -416,6 +535,18 @@ header #headerSocials ul{
     align-items: center;
     color: black;
     flex-wrap: wrap;
+}
+    
+    #section1 ul a li .headingDiv {
+    width: 100%;
+    height: 60px;
+    line-height: 40px;
+}
+    
+    #section1 h2{
+
+    height:170px;
+    line-height:170px;
 }
 
 .bannerHeading p {
@@ -676,13 +807,14 @@ header #headerSocials ul{
 
 #section3 .content1 h1{
     width:100%;
-    height:10%;
-    color:yellow;
-    font-size:40px;
+    height:60px;
+    color:black;
+    font-size:20px;
     text-align: center;
     padding-top:7%;
     text-transform: uppercase;
     float:left;
+
 }
 
 #section3 .content1 ul{
@@ -819,12 +951,20 @@ vertical-align:middle;
     display: block;
     left: 5%;
     position: relative;
-     margin-top:50px;
+     margin-top:70px;
      height:auto;
      margin-bottom:50px;
 
 }
     
+    
+    #section3 .content1 h1{
+    color:white;
+        padding-top:30px;
+        padding-bottom:70px;
+}
+    
+
     #section3 .content2 p{
         
         padding:30px;
@@ -969,8 +1109,8 @@ vertical-align:middle;
     height:30%;
     width:auto;
     display:block;
-    margin-top:30px;
-    margin-bottom:20px;
+    margin-top:35px;
+    margin-bottom:15px;
     opacity:0.7;
 }
 
@@ -983,10 +1123,13 @@ vertical-align:middle;
     color:white;
     width:90%;
     margin-left:5%;
+    padding-left:5px;
+    padding-right:5px;
 }
 
 #section4 .content2 .upperContent .upperContentList2 p span{
     font-size:24px;
+    padding:0px;
 }
 
 
@@ -996,8 +1139,8 @@ vertical-align:middle;
     height:30%;
     width:auto;
     display:block;
-    margin-top:30px;
-    margin-bottom:20px;
+    margin-top:35px;
+    margin-bottom:15px;
     opacity:0.7;
 }
 
@@ -1010,10 +1153,13 @@ vertical-align:middle;
     color:white;
     width:90%;
     margin-left:5%;
+    padding-left:5px;
+    padding-right:5px;
 }
 
 #section4 .content2 .upperContent .upperContentList1 p span{
     font-size:24px;
+    padding:0px;
 }
 
 
@@ -1023,8 +1169,8 @@ vertical-align:middle;
     height:30%;
     width:auto;
     display:block;
-    margin-top:30px;
-    margin-bottom:20px;
+    margin-top:35px;
+    margin-bottom:15px;
     opacity:0.7;
 }
 
@@ -1046,7 +1192,7 @@ vertical-align:middle;
     
     position:absolute;
     top:225px;
-    left:50%;
+    left:49%;
     font-size:20px;
 
 }
@@ -1055,10 +1201,10 @@ vertical-align:middle;
 #section4 .content2 #equals{
 
     position:absolute;
-    left:30px;
+    left:5%;
     display:block;
     font-size:20px;
-    bottom:100px;
+    bottom:90px;
 
 }
 
@@ -1232,6 +1378,12 @@ font-size:20px;
 
 }
     
+    #section4 .content2 .upperContent .upperContentList2 p span{
+        
+        padding-left:10px;
+        padding-right:10px;
+    }
+    
     #section4 .content1 p{
         
         padding:30px;
@@ -1244,6 +1396,16 @@ font-size:20px;
         display:block;
     position:relative;
 }
+    
+    #section4 .content2 #plus{
+    
+    position:absolute;
+    top:175px;
+    left:49%;
+    font-size:20px;
+
+}
+
     
     
 
@@ -1759,6 +1921,7 @@ font-size:20px;
     background-color:;
     overflow: hidden;
     float:left;
+    display:none;
 
 }
 
@@ -1796,7 +1959,7 @@ font-size:20px;
 
 #section5 .content1 #sideVideos{
     
-    width:75%;
+    width:98%;
     height:650px;
     float:right;
     background-color:;
@@ -1818,9 +1981,9 @@ align-items: center;
 }
 
 #section5 .content1 #sideVideos ul::-webkit-scrollbar-thumb {
-  background-color: white;    /* color of the scroll thumb */
+  background-color: orange;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 1px solid white;  /* creates padding around scroll thumb */
+  border: 1px solid orange;  /* creates padding around scroll thumb */
 }
 
 
@@ -1990,13 +2153,13 @@ align-items: center;
     
     
     #section5 .content1 #sideVideos {
-    width: 100%;
-    height: 550px;
+    width: 98%;
+    height: 93%;
     float: left;
     background-color: ;
     position: relative;
     right: 0;
-    top: 123px;
+    top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2052,8 +2215,31 @@ align-items: center;
      margin-top:50px;
      height:auto;
      margin-bottom:50px;
+     padding:0px;
 
 }
+    
+    #section5 .content1 #sideText{
+
+    display:block;
+
+        height:10%;
+        line-height:10%;
+}
+    
+    #section5 .content1 #sideVideos ul {
+    list-style: none;
+    width: 100%;
+    height: 86%;
+        margin-top:14%;
+    overflow-y: scroll;
+    
+    }
+    
+        #section5 .content1 #sideVideos{
+        
+            top:15px;
+        }
     
     #section5 .content2 p{
         
@@ -2204,20 +2390,30 @@ align-items: center;
 #section6 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
-  margin: 25px 0;
+  margin: 20px 0;
   display: inline-block;
   border:0px none;
-  border-bottom: 5px solid #fda700;
   box-sizing: border-box;
 }
 #section6 input[type=email], select {
   width: 100%;
   padding: 12px 20px;
-  margin: 25px 0;
+  margin: 20px 0;
   display: inline-block;
   border:0px none;
-  border-bottom: 5px solid #fda700;
   box-sizing: border-box;
+}
+
+#section6 textarea{
+    
+      width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border:0px none;
+  box-sizing: border-box;
+    height:120px;
+
 }
 
 #section6 input[type=submit] {
@@ -2227,29 +2423,28 @@ align-items: center;
   padding: 14px 20px;
   margin: 12px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px;
   cursor: pointer;
     margin-left:50%;
-    font-family: mainFont;
+    font-family: lemonMedium;
 }
 
 #section6 input[type=submit]:hover {
-  background-color: #fda700;
+  background-color: #e69d00;
     color:#1c1c1c;
-    font-family: mainFont;
 }
 
 #section6 ::-webkit-input-placeholder { /* Edge */
-  color: black;
+  color: #b0b0b0;
     text-transform: uppercase;
 }
 
 #section6 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: black;
+  color: #b0b0b0;
 }
 
 #section6 ::placeholder {
-  color: black;
+  color: #b0b0b0;
 }
 
 #section6 input {
@@ -2372,33 +2567,99 @@ appearance: none;
 /***************** start footer ********************/
 
 footer{
-    
-    height:150px;
+    border-top:15px solid black;
     background-color:black;
     width:100%;
     position:relative;
     margin-top:30px;
+    display:block;
+    height:425px;
 
 }
 
-footer p{
+
+
+footer #footerLeft{
+
+    float:left;
+    margin-left:2%;
+    background-color:black;
+    max-width:65%;
+}
+
+footer #footerRight{
+    
+    float:right;
+    margin-right:2%;
+    backgroud-color:black;
+    max-width:25%;
+}
+
+footer ul li{
+
+    color:white;
+}
+
+
+footer #footerLeft img{
+
+    width:auto;
+    height:35px;
+    margin-top:20px;
+    
+}
+footer #footerLeft p{
     
     color:white;
-    font-weight:200;
-    text-transform: uppercase;
-    margin-top:40px;
-    padding:20px;
-    font-size:16px;
-    
+    margin-top:20px;
 }
 
-footer p a{
+footer #footerLeft ul{
+    
+    margin-top:30px;
+    list-style: none;
+
+}
+
+footer #footerLeft ul li{
+    list-style:none;
+    color:white;
+    padding:3px;
+}
+
+
+footer #footerLeft ul li a{
+    
+    color:orange;
+
+}
+
+footer #footerRight h2{
     
     color:white;
-    font-weight:400;
-    color:#fda700;
-    font-size:16px;
+    margin-top:20px;
+    text-align: left;
+    padding-left:12px;
+    font-size:18px;
+    font-family: lemonMedium;
 }
+
+footer #footerRight ul{
+    
+    margin-top:20px;
+    list-style:none;
+}
+
+footer #footerRight ul li{
+    
+    color:white;
+    list-style:none;
+    padding:12px;
+    display:inline-block;
+    color:orange;
+}
+
+
 footer #leftFoot{
     
     float:left;
@@ -2407,7 +2668,9 @@ footer #leftFoot{
   left: 0%;
     text-align: left;
     margin-top:0px;
+    max-width:60%;
 }
+
 
 
 footer #middleFoot{
@@ -2431,6 +2694,20 @@ footer #rightFoot{
     margin-top: 0px;
 }
 
+footer #copyright{
+
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    padding:20px;
+    font-size:12px;
+    text-align:center;
+    border-top:2px solid #404040;
+    margin-top:10px;
+    color:white;
+}
+
+footer #copyright:
 
 @media (max-width: 1100px){
 
@@ -2458,11 +2735,28 @@ footer #rightFoot{
 }
 @media (max-width: 740px){
 
-    footer {
-        
-        height:150px;
+    footer{
+    
+        height:450px;
+    
     }
     
+    footer #footerLeft ul li a{
+        
+        font-size:12px;
+    }
+    
+    footer #footerLeft{
+        
+        margin-left:20px;
+        width:55%;
+    }
+    footer #footerRight{
+        
+        margin-right:20px;
+        width:30%;
+        
+    }
     
  footer #middleFoot{
         left:50%;
@@ -2491,10 +2785,10 @@ footer #rightFoot{
 
 @media (max-width: 440px){
 
-    footer #leftFoot{
-        
-        font-size:11px;
-        width:200px;
+    footer{
+    
+        height:520px;
+    
     }
     
      footer p a{

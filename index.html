@@ -18,10 +18,28 @@
     
     <body>
         
+        <script>document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'complete') {
+      setTimeout(function(){
+          document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+      },1000);
+  }
+}</script>
+        
+        <div id="load">
+            <div id="headerLogo"><a href="#"><img src="logonewnew.png" id="headerLogo"></a></div>
+            
+            <img id="preloadIMg" src="preload.jpg" />
+        
+        </div>
+        
+        
         <div id="homeWrap">
             <header>
                 
-                <div id="headerLogo"><a href="#"><img src="shitlogo.png" id="headerLogo"></a></div>
+                <div id="headerLogo"><a href="#"><img src="logonewnew.png" id="headerLogo"></a></div>
                 <div id="headerSocials">
                     
                     <i class="fas fa-bars fa-2x"></i>
@@ -45,7 +63,7 @@
                 <img src="safetyBackground.jpg" id="safetyBackground" />
                 
                <div id="homeText">
-                    <h2>LETS CREATE</h2>
+                    <h2>LET'S CREATE</h2>
                    <h3>TOGETHER<span>.</span></h3>
                 </div>
                 
@@ -66,8 +84,8 @@
                     <a><li><div class="imageDiv"><img src="listitem1.png" /></div><div class="headingDiv"><h3>Talent sourcing</h3></div></li></a>
                     <a><li><div class="imageDiv"><img src="listitem2.png" /></div><div class="headingDiv"><h3>Brief development</h3></div></li></a>
                     <a><li><div class="imageDiv"><img src="listitem4.png" /></div><div class="headingDiv"><h3>campaign creation</h3></div></li></a>
-                    <a ><li><div class="imageDiv"><img src="listitem3.png" /></div><div class="headingDiv"><h3>contract handling</h3></div></li></a>
-                    <a ><li><div class="imageDiv"><img src="listitem5.png" /></div><div class="headingDiv"><h3>content management</h3></div></li></a>
+                    <a><li><div class="imageDiv"><img src="listitem3.png" /></div><div class="headingDiv"><h3>contract handling</h3></div></li></a>
+                    <a><li><div class="imageDiv"><img src="listitem5.png" /></div><div class="headingDiv"><h3>content oversight</h3></div></li></a>
                     <a><li><div class="imageDiv"><img src="listitem6.png" /></div><div class="headingDiv"><h3>talent management</h3></div></li></a>
                     
                 </ul>
@@ -93,7 +111,7 @@ At Run By Influencers our team has over 8 years experience in their craft and th
         <div id="section3">
             
             <div class="content1">
-                <h1></h1>
+                <h1>Our brands</h1>
                 <ul >
                     <li><img src="brand6e.png"></li>
                     <li><img src="brand5f.png"></li>
@@ -113,8 +131,11 @@ At Run By Influencers our team has over 8 years experience in their craft and th
             
             <div class="content2">
                 <p><span style="font-size:24px;">Successful campaigns = <br /><span style="color:orange;">happy clients</span></span><br /> <br /><br /> <br /><br /> 
-Here at run by influencers a.k.a rbi <br /> we use our 200+ in house talent roster combined with our external headhunting services to match the right influencer with the right brand.<br /><br /><br />
-                    from brief development to content management, we're with you every step of the way.</p>
+Here at run by influencers, WE
+USE OUR IN HOUSE TALENT ROSTER COMBINED WITH OUR EXTERNAL
+HEADHUNTING SERVICES TO MATCH THE RIGHT INFLUENCER WITH THE
+RIGHT BRAND. <br /><br /><br />
+                    from brief development to content oversight, we're with you every step of the way.</p>
             </div>
             
            
@@ -126,33 +147,41 @@ Here at run by influencers a.k.a rbi <br /> we use our 200+ in house talent rost
             
             <div class="content2">
                 <span id="plus">+</span>
-                <h2>Our <span>magic</span> formula</h2>
+                <h2>Our <span>IIP</span> formula</h2>
                 <div class="upperContent"><div class="upperContentList1"><img src="section2listitem1.png" /><p><span>Active Influencer</span> <br /> (someone who has uploaded in the last 28 days)</p></div><div class="upperContentList2"><img src="section2listitem2.png" /><p><span>Technical Data</span> <br /> (analyse their cpm & previous sponsorships)</p></div></div>
                 <div class="lowerContent">
-                    <div class="lowerContentList1"><span id="equals">=</span><img src="section2listitem3.png" /><p><span>Create our magic plan</span> <br /> (by deducing your brands campaign goals & budget & watching talent based on this)</p></div>
+                    <div class="lowerContentList1"><span id="equals">=</span><img src="section2listitem3.png" /><p><span>Create our magic plan</span> <br /> ((WE PROVIDE
+AN IIP BASED ON YOUR CAMPAIGN GOALS & BUDGET)</p></div>
                 </div>
             </div>
             
-            <div class="content1"><p><span>metrics that matter <br /> = A winning creation</span><br /> <br /><br /> 
-We know what stats truly make a difference. <br /><br /> which is why we keep things simple.</p></div>
+            <div class="content1"><p><span>metrics that matter <br /> = <span style="color:orange;">A winning creation</span></span><br /> <br /><br /> 
+USING OUR KPI REVIEW METHOD,<br />
+WE CREATE OUR IDEAL INFLUENCER PROFILE- THE IIP APPROACH.
+<br /><br />THIS RESULTS IN THE BEST PERFORMING CAMPAIGNS ENSURING A
+GOOD ROI EVERYTIME.</p></div>
         
         
         </div>
         
-        <div class="bannerHeading" style="margin-bottom:80px;"><p>Lets create your <span>dream</span> campaign</p></div>
+        <div class="bannerHeading" style="margin-bottom:80px;"><p>Let's create your <span>dream</span> campaign</p></div>
         
          <span class="anchor" id="talentsec"></span>
         <div id="section5">
            
+           
             <div class="content2">
-                <p><span style="font-size:24px;">Top talent = <br /><span style="color:orange;">click-worthy</span> content</span><br /> <br /><br /> <br /><br /> 
-We get to know all our talent so we can undertsand their channel needs.<br /><br /><br />
+                <p><span style="font-size:24px;">Top talent = <br /><span style="color:orange;">click-worthy content</span></span><br /> <br /><br /> <br /><br /> 
+ESTABLISHING MEANINGFUL CONNECTIONS WITH OUR TALENT
+ENABLES US TO ADVISE ON CONTENT CREATION AND ACCELERATE
+CHANNEL GROWTH ACROSS YOUTUBE & INSTAGRAM<br /><br /><br />
                     Unlike other agencies who have faceless databases, we hand pick the very best who are actively creating clickable content.</p>
             </div>
             
-             <div class="content1"><div id="sideText"><p>SOME OF THE TEAM DOING WHAT THEY DO BEST..</p></div>
+             <div class="content1">
             
             <div id="sideVideos">
+                <div id="sideText"><p>Our Campaigns</p></div>
                 
                 <ul>
                     <li><a href="#"><div class='embed-container'><iframe src='https://www.youtube.com/embed/CS3dpn6owCw' frameborder='0' allowfullscreen></iframe></div></a></li>
@@ -164,45 +193,45 @@ We get to know all our talent so we can undertsand their channel needs.<br /><br
         
         </div>
             <div id="section4b">
-            <div class="content1"><p><span>incredible content <br /> = deserves to be paid content</span><br /> <br /><br /> 
-We value your time and creativity,<br /> so we only seek paid oppertunities.<br />we handle all your contracts & payouts<br /> so you can focus on what you do best.</p></div>
+                <div class="content1"><p><span>incredible content <br /> = <span style="color:orange;">deserves to be paid content</span></span><br /> <br /><br /> 
+We value your time and creativity,<br /> so we only seek out paid opportunities.<br />we handle all your contracts and payouts<br /> so you can focus on what you do best.</p></div>
             
             <div class="content2">
                 
                 <h2>How we work with <span>talent</span></h2>
-                <div class="upperContent"><div class="upperContentList1"><img src="secondIcon4.png" /><p><span >Exclusive or non-exclusive</span> <br /> (we offer flexible choices to suit you - zero pressure)</p></div><div class="upperContentList2"><img src="secondIcon1.png" /><p><span >Source oppertunities</span> <br /> (we actively seek out new partnership possibilities everyday)</p></div></div>
+                <div class="upperContent"><div class="upperContentList1"><img src="secondIcon4.png" /><p><span >Exclusive or non-exclusive</span> <br /> (we offer flexible choices to suit you, zero pressure)</p></div><div class="upperContentList2"><img src="secondIcon1.png" /><p><span >Source opportunities</span> <br /> (we actively seek out new partnership possibilities)</p></div></div>
                 <div class="lowerContent">
-                    <div class="lowerContentList1"><img src="secondIcon2.png" /><p><span >give you the choice</span> <br /> (you are in full control of what campaigns you accept)</p></div><div class="lowerContentList2"><img src="secondIcon3.png" /><p><span >help manage things</span> <br /> (we take care of briefs, contracts, payments - so you can just create)</p></div>
+                    <div class="lowerContentList1"><img src="secondIcon2.png" /><p><span >give you the choice</span> <br /> (you are in full control of what campaigns you accept)</p></div><div class="lowerContentList2"><img src="secondIcon3.png" /><p><span >handle the paperwork</span> <br /> (we take care of briefs, contracts, payments - so you can just create)</p></div>
                 </div>
             </div>
         
         
         </div>
             
-            <div class="bannerHeading" style="margin-bottom:40px;hei"><p>start earning more, for what you do <span>best</span> </p></div>
+            <div class="bannerHeading" style="margin-bottom:40px;hei"><p>start earning more for what you do <span>best</span> </p></div>
        
             
              <span class="anchor1" id="contactsec"></span>
             <div id="section6">
             
 
-                <div class="content1"><p>Contacting us = <br /> the <span>best thing</span> you'll ever do</p></div>
+                <div class="content1"><p>Contacting us = <br /> <span>the best thing you'll ever do</span></p></div>
             
             <div class="content2">
                
                 <p><br /> 
-We're here to make your life as a brand, fellow agency or influencer simpler. Get in touch and see how we can help.
+Get in touch and see how we can help.
                     <br /><br />
                  <!--alert messages start-->
     <?php echo $alert; ?>
     <!--alert messages end-->
 <form method="post" name="contactform" action="#myform" id="myform">
-    <input type="text" id="name" name="name" placeholder="Your name..">
+    <input type="text" id="name" name="name" placeholder="Your name">
 
-    <input type="email" id="email" name="email" placeholder="Your Email.."required>
+    <input type="email" id="email" name="email" placeholder="Your Email"required>
     
 
-    <input type="text" id="message" name="message" placeholder="Message..." required>
+    <textarea  id="message" name="message" placeholder="Enter Message" required></textarea>
 
   
     <input type="submit" name="submit" value="SEND">
@@ -219,10 +248,63 @@ We're here to make your life as a brand, fellow agency or influencer simpler. Ge
         </div>
         
         <footer>
+            <div id="footerLeft">
+                <p>NTERNATIONAL HOUSE,
+24 HOLBORN VIADUCT,
+LONDON, UNITED KINGDOM, EC1A 2BN</p>
+                <img src="logofooter.png" />
+                
+                
+                <ul>
+                    <li>General: <a href="">hello@runbyinfluencers.com</a></li>
+                    <li>Jobs: <a href="">join@runbyinfluencers.com</a></li>
+                    <li>Press: <a href="">press@runbyinfluencers.com</a></li>
+                    <li>+44 12345678</li>
+                    
+                    <br />
+            <br />
+            
+            <li>Privacy Policy</li>
+            <li>terms & conditions</li>
+                </ul>
+            </div>
+            <div id="footerRight">
+                
+                <h2>Follow us</h2>
+                <ul>
+                    <li><i class="fab fa-twitter fa-lg" ></i>
+
+</li>
+                    <li><i class="fab fa-instagram fa-lg"></i>
+
+</li>
+                    <li><i class="fab fa-facebook-square fa-lg"></i>
+
+</li>
+                    <li><i class="fab fa-youtube fa-lg"></i>
+
+</li>
+                    
+                    <li><i class="fas fa-envelope-open fa-lg"></i>
+
+</i>
+
+</li>
+            
+            
+                </ul>
+            
+            </div>
+        
+        
+        <div id="copyright"><p>copyright &#169; reserved for runbyinfluencers</p></div>
+            
+            <!--
             <p id ="leftFoot">NTERNATIONAL HOUSE,<br />
                 24 HOLBORN VIADUCT, <br />LONDON, UNITED KINGDOM, EC1A 2BN<br /><a href="#">hello@runbyinfluencers.com</a></p>
             <p id ="middleFoot"></p>
             <p id ="rightFoot"><a href="#">Privacy policy</a><br /><a href="#">Terms & conditions</a><br /><a href="#">Vacancies</a></p>
+-->
         
         
         </footer>
