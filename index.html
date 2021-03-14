@@ -275,6 +275,54 @@ Get in touch and see how we can help.
             </div>
         </div>
         
+            <div id="privacyOverlay" class="closed" ><h2>Privacy Policy</h2><br /><p>Run By Influencers Limited, referred to as RBI (or we/us/our) deals with a number of influencers through various social channels, that we may connect to our brands who require their specific influencer needs.<br /><br />
+Through our services, website, or via other interaction or communication with us, personal data may need to be processed. RBI considers that a careful handling of personal data is of great importance. Personal data is therefore carefully processed and secured. In processing, RBI lives up to the obligations under the Applicable Data Protection Law.<br /><br />
+In order to fulfil and optimize our services, we need to process certain personal data. In any case, your privacy is highly important to us. In this Privacy Statement, we will inform you about the way we process your personal data when you visit our website or make use of our services. It is important that you read and understand this Privacy Statement, so you can make an informed decisions and genuine choices about the data that we process.
+How we process your data<br /><br />
+We may process the following types of personal data:
+a. Personal data of visitors of RBI website. The personal data we process of our visitors of our website includes your name and address data; IP address; type browser; time of the session; online behaviour; demographic information (country and language)<br /><br />
+b. Personal data via our contact form or contact email address. Personal data can be processed by means of a contact form, where you are asked to enter various information. You choose which information you provide. The personal data we process via our contact form or contact email address includes your name and/or company name; (company) email address; title; phone number; website; social media account (username); YouTube channel; reach on social media; your question or message.<br /><br />
+We may process your personal data for various purposes:
+<br /><br />
+Maintaining our administration, approaching you for a sponsorship, maintaining contact, handling enquiries, complaints and disputes. Assess new business, job or press enquiries.
+<br /><br />
+We will not further process your personal data for other purposes than mentioned in this Privacy Statement.
+<br /><br />
+We only process your personal data when there is a legal ground. When you are a website visitor or otherwise engage with RBI, we may process your personal data for the following legal grounds:
+<br /><br />
+● Consent for auditing a marketing campaign
+<br /><br />
+We may ask for your consent for certain data processing activities such as auditing the effect of a marketing campaign.
+<br /><br />
+● Legitimate interests
+<br /><br />
+We may furthermore process personal data based on our -and your- legitimate interest to the extent such interest is not overridden by your privacy interests or fundamental rights and freedoms. The legitimate interests that we may rely on for the processing of your personal data are to operate and grow our business, to communicate with you in relation to our website and provide support, to keep our website updated and relevant, to protect our business and prevent fraud and other prohibited or illegal activities and for due diligence purposes if we choose to sell, transfer or merge (parts of) our business.
+<br /><br />
+● Statutory obligations
+<br /><br />
+When required, we may process your personal data to meet with statutory obligations, such as our obligations arising out of tax laws.
+<br /><br />
+Who has access to your data
+<br /><br />
+We strictly retain your data for sponsorship opportunities, your data is securely stored and can only be accessed by persons working at or on behalf of RBI. 
+<br /><br />
+We will not sell or rent your personal data to third parties.
+<br /><br />
+How is your personal data secured? 
+<br /><br />
+We will exercise due care when dealing with your personal data. Amongst other things, this means that we will adopt appropriate technical and organizational measures to secure and protect your personal details against loss and unlawful processing. We protect our systems and applications according to the applicable standards for information security and we also make data processing agreements with our service providers which include obligations to implement adequate security measures.
+<br /><br />
+Your Rights
+<br /><br />
+As a influencer or brand, you have the right to request the removal from our secure database at any given time. 
+<br /><br />
+Contact
+<br /><br />
+Should you have any questions regarding the safety of your data, please do not hesitate to contact us at: hello@runbyinfluencers.com
+</p><i class="fas fa-times fa-lg" id="closeIcon" onclick="privacyoff()"></i>
+
+              
+</div>
         <footer>
             <div id="footerLeft">
                 <p>INTERNATIONAL HOUSE,
@@ -292,8 +340,8 @@ LONDON, UNITED KINGDOM, EC1A 2BN</p>
                     <br />
             <br />
             
-            <li>Privacy Policy</li>
-            <li>terms & conditions</li>
+                    <li><a id="privacyLi" onclick="privacyOn()">Privacy Policy</a></li>
+                    
                 </ul>
             </div>
             <div id="footerRight">
@@ -331,7 +379,36 @@ LONDON, UNITED KINGDOM, EC1A 2BN</p>
         
         
         </footer>
+            
+              <script>
+                  /**
+                  function privacyOn(){
+     
+     $("#privacyOverlay").removeClass();
+    $("#privacyOverlay").addClass("open");
+ }  
+                  
+                $('#closeIcon').click(function() {
+    
+        $("#privacyOverlay").removeClass("open"); 
+        $("#privacyOverlay").addClass("closed");
+});**/
+                    
+function privacyOn() {
+  document.getElementById("privacyOverlay").style.display = "block";
+}
+
+function privacyoff() {
+  document.getElementById("privacyOverlay").style.display = "none";
+}
+
+            
+            </script>
+                
         
+            
+            
+        <script></script>
         
              <script type="text/javascript">
     window.addEventListener('scroll', reveal);

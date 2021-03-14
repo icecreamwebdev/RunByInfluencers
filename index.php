@@ -292,8 +292,7 @@ LONDON, UNITED KINGDOM, EC1A 2BN</p>
                     <br />
             <br />
             
-            <li>Privacy Policy</li>
-            <li>terms & conditions</li>
+                    <li>><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
             <div id="footerRight">
@@ -321,6 +320,7 @@ LONDON, UNITED KINGDOM, EC1A 2BN</p>
         
         
         <div id="copyright"><p>copyright &#169; reserved for runbyinfluencers</p></div>
+            <div id="copyrightOverlay"><p></p></div>
             
             <!--
             <p id ="leftFoot">NTERNATIONAL HOUSE,<br />
